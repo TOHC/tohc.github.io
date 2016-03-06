@@ -38,20 +38,6 @@ html, body {
     border-color: #eee !important;
 }
 
-.form-group {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    margin-bottom: 16px;
-}
-
-.form-group:last-child {
-    margin-bottom: 0;
-}
-
-.form-mentor {
-    margin-top: 16px;
-}
-
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -73,19 +59,25 @@ html, body {
     float: right;
 }
 
-#team-grid .column,
-#event-grid .column {
-    float: left;
-}
-
-#team-grid .panel {
+#team .panel {
     padding: 8px;
     margin: 8px;
+    height: 470px;
+}
+
+@media screen and (max-width: 767px){
+    #team .panel {
+        height: auto;
+    }
+}
+
+#team img {
+    width: 75%;
 }
 
 .event {
     padding: 8px;
-    margin: 8px;
+    margin: 8px !important;
     border-color: #A6A6FF;
     background-color: #F6F6FF;
 }
@@ -121,27 +113,6 @@ html, body {
     }
 }
 
-@media screen and (min-width: 1px) and (max-width: 623px) {
-    #team-grid[data-columns]::before,
-    #event-grid[data-columns]::before {
-        content: '1 .column.col-xs-12';
-	}
-}
-
-@media screen and (min-width: 624px) and (max-width: 991px) {
-    #team-grid[data-columns]::before,
-    #event-grid[data-columns]::before {
-	    content: '2 .column.col-xs-6';
-	}
-}
-
-@media screen and (min-width:992px) and (max-width: 9999px) {
-    #team-grid[data-columns]::before,
-    #event-grid[data-columns]::before {
-        content: '3 .column.col-sm-4';
-    }
-}
-
 .intro-section,
 .team-section,
 .faq-section
@@ -158,7 +129,7 @@ html, body {
     min-height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #eee;
+    background: #f7f7f7;
 }
 
 h1,
