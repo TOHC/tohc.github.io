@@ -30,7 +30,7 @@ html, body {
 }
 
 .active .page-scroll {
-    background-color: #eee !important;
+    background-color: #f7f7f7 !important;
     color: #101010 !important;
 }
 
