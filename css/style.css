@@ -8,7 +8,7 @@ html, body {
 }
 
 .navbar-toggle {
-    border-color: #eee !important;
+    border-color: #f7f7f7 !important;
 }
 
 .navbar-toggle:hover,
@@ -17,11 +17,11 @@ html, body {
 }
 
 .icon-bar {
-    background-color: #eee !important;
+    background-color: #f7f7f7 !important;
 }
 
 .page-scroll {
-    color: #eee !important;
+    color: #f7f7f7 !important;
     cursor: pointer;
 }
 
@@ -35,7 +35,7 @@ html, body {
 }
 
 .navbar-collapse {
-    border-color: #eee !important;
+    border-color: #f7f7f7 !important;
 }
 
 @media(min-width:767px) {
@@ -92,7 +92,7 @@ html, body {
     margin: 8px auto;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
 	h1 {
         font-size: 30px;
     }
@@ -113,23 +113,22 @@ html, body {
     }
 }
 
-.intro-section,
-.team-section,
-.faq-section
- {
+section {
     min-height: 100%;
-    padding-top: 150px;
     text-align: center;
-    background: #fff;
 }
 
 .about-section,
 .events-section,
 .contact-section {
-    min-height: 100%;
+    background: #fff;
     padding-top: 150px;
-    text-align: center;
+}
+
+.team-section,
+.faq-section {
     background: #f7f7f7;
+    padding-top: 150px;
 }
 
 h1,
@@ -163,16 +162,117 @@ a {
     border: 1px solid #000;
 }
 
-#challengeList {
-    margin: 32px auto;
+.carousel,
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
 }
 
-.btn-submit {
-    float: right;
-    margin-bottom: 8px;
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
-.alert-submit {
-    margin-top: 8px;
-    margin-bottom: 8px;
+.bg1 {
+    background-image: -webkit-linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg1.jpg');
+    background-image: -o-linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg1.jpg');
+    background-image: -moz-linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg1.jpg');
+    background-image: linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg1.jpg');
+}
+
+.bg2 {
+    background-image: -webkit-linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg2.jpg');
+    background-image: -o-linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg2.jpg');
+    background-image: -moz-linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg2.jpg');
+    background-image: linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg2.jpg');
+}
+
+.bg3 {
+    background-image: -webkit-linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg3.jpg');
+    background-image: -o-linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg3.jpg');
+    background-image: -moz-linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg3.jpg');
+    background-image: linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg3.jpg');
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    padding: 12px 12px;
+    border: 2px solid #fff;
+    border-radius: 100% !important;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    z-index: 10;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.btn i {
+    display: block;
+    text-align: center;
+}
+
+.glyphicon-menu-left,
+.glyphicon-menu-right {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+}
+
+.carousel-overlay {
+    position: absolute;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    height: 100%;
+    padding-left: 0;
+    margin-left: -30%;
+}
+
+.carousel-overlay h1 {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    top: 200px;
+    font-size: 50px;
+}
+
+.carousel-overlay .btn-container {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    bottom: 100px;
+}
+
+@media screen and (max-width: 767px){
+    .carousel-overlay h1 {
+        position: absolute;
+        width: 100%;
+        color: #fff;
+        top: 70px;
+        font-size: 30px;
+    }
+
+    .carousel-overlay .btn-container {
+        position: absolute;
+        width: 100%;
+        color: #fff;
+        bottom: 20px;
+    }
 }
