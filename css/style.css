@@ -5,6 +5,7 @@ html, body {
 
 .navbar {
     background-color: #101010;
+    border: 0;
 }
 
 .navbar-toggle {
@@ -35,7 +36,7 @@ html, body {
 }
 
 .navbar-collapse {
-    border-color: #f7f7f7 !important;
+    border: 0;
 }
 
 @media(min-width:767px) {
