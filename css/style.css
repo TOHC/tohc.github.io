@@ -1,6 +1,7 @@
 html, body {
     width: 100%;
     height: 100%;
+    font-family: 'Maven Pro', sans-serif;
 }
 
 .navbar {
@@ -26,8 +27,15 @@ html, body {
     cursor: pointer;
 }
 
+.navbar-nav .page-scroll {
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
 .navbar-brand {
     color: #4D4DFF !important;
+    font-size: 1.5em;
+    font-weight: 500;
 }
 
 .active .page-scroll {
@@ -49,6 +57,16 @@ html, body {
 
     .top-nav-collapse {
         padding: 0;
+    }
+}
+
+#about p {
+    font-size: 1.5em;
+}
+
+@media(max-width: 767px){
+    #about p {
+        font-size: 1.25em;
     }
 }
 
@@ -93,6 +111,10 @@ html, body {
     margin: 8px auto;
 }
 
+#faq h4 {
+    margin-bottom: 32px;
+}
+
 @media screen and (max-width: 767px) {
 	h1 {
         font-size: 30px;
@@ -116,7 +138,6 @@ html, body {
 
 section {
     min-height: 100%;
-    text-align: center;
 }
 
 .about-section,
@@ -139,6 +160,10 @@ h4,
 h5,
 h6 {
     line-height: 150%;
+}
+
+h1 {
+    margin-bottom: 32px;
 }
 
 a {
@@ -181,24 +206,24 @@ a {
 }
 
 .bg1 {
-    background-image: -webkit-linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg1.jpg');
-    background-image: -o-linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg1.jpg');
-    background-image: -moz-linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg1.jpg');
-    background-image: linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg1.jpg');
+    background-image: -webkit-linear-gradient(rgba(22, 22, 53, 0.7), rgba(22, 22, 53, 0.7)), url('../images/bg1.jpg');
+    background-image: -o-linear-gradient(rgba(22, 22, 53, 0.7), rgba(22, 22, 53, 0.7)), url('../images/bg1.jpg');
+    background-image: -moz-linear-gradient(rgba(22, 22, 53, 0.7), rgba(22, 22, 53, 0.7)), url('../images/bg1.jpg');
+    background-image: linear-gradient(rgba(22, 22, 53, 0.7), rgba(22, 22, 53, 0.7)), url('../images/bg1.jpg');
 }
 
 .bg2 {
-    background-image: -webkit-linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg2.jpg');
-    background-image: -o-linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg2.jpg');
-    background-image: -moz-linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg2.jpg');
-    background-image: linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg2.jpg');
+    background-image: -webkit-linear-gradient(rgba(22, 22, 53, 0.7), rgba(22, 22, 53, 0.7)), url('../images/bg2.jpg');
+    background-image: -o-linear-gradient(rgba(22, 22, 53, 0.7), rgba(22, 22, 53, 0.7)), url('../images/bg2.jpg');
+    background-image: -moz-linear-gradient(rgba(22, 22, 53, 0.7), rgba(22, 22, 53, 0.7)), url('../images/bg2.jpg');
+    background-image: linear-gradient(rgba(22, 22, 53, 0.7), rgba(22, 22, 53, 0.7)), url('../images/bg2.jpg');
 }
 
 .bg3 {
-    background-image: -webkit-linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg3.jpg');
-    background-image: -o-linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg3.jpg');
-    background-image: -moz-linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg3.jpg');
-    background-image: linear-gradient(rgba(22, 22, 73, 0.4), rgba(22, 22, 73, 0.4)), url('../images/bg3.jpg');
+    background-image: -webkit-linear-gradient(rgba(22, 22, 53, 0.7), rgba(22, 22, 53, 0.7)), url('../images/bg3.jpg');
+    background-image: -o-linear-gradient(rgba(22, 22, 53, 0.7), rgba(22, 22, 53, 0.7)), url('../images/bg3.jpg');
+    background-image: -moz-linear-gradient(rgba(22, 22, 53, 0.7), rgba(22, 22, 53, 0.7)), url('../images/bg3.jpg');
+    background-image: linear-gradient(rgba(22, 22, 53, 0.7), rgba(22, 22, 53, 0.7)), url('../images/bg3.jpg');
 }
 
 .btn-circle {
@@ -250,8 +275,8 @@ a {
     position: absolute;
     width: 100%;
     color: #fff;
-    top: 200px;
-    font-size: 50px;
+    top: 33%;
+    font-size: 5em;
 }
 
 .carousel-overlay .btn-container {
@@ -266,7 +291,6 @@ a {
         position: absolute;
         width: 100%;
         color: #fff;
-        top: 70px;
         font-size: 30px;
     }
 
@@ -276,4 +300,19 @@ a {
         color: #fff;
         bottom: 20px;
     }
+}
+
+::selection {
+  text-shadow: none;
+  background: #8080ff;
+}
+::-moz-selection {
+  text-shadow: none;
+  background: #8080ff;
+}
+img::selection {
+  background: transparent;
+}
+img::-moz-selection {
+  background: transparent;
 }
