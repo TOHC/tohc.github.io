@@ -1,4 +1,4 @@
-## Welcome to the Toronto Hacker Club's open source website!
+## Welcome to the Toronto Hacker Club's community website!
 
 ### Who can contribute?
 Anyone and everyone is welcome to fork and help develop the Toronto Hacker Club's website.
