@@ -147,13 +147,13 @@ section {
 }
 
 .about-section,
-.events-section,
+.team-section,
 .contact-section {
     background: #fff;
     padding-top: 150px;
 }
 
-.team-section,
+.events-section,
 .faq-section {
     background: #f7f7f7;
     padding-top: 150px;
