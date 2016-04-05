@@ -177,6 +177,16 @@
                                 <p>Adam was the first person not originally on the team to join the founders as one of the club's executives. He now does a wide variety of things for the club including managing finances and getting sponsorships.</p>
                             </div>
                         </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="panel panel-default">
+                                <div class="text-center">
+                                    <h3>Curtis Chong</h3>
+                                    <h4>Finance</h4>
+                                </div>
+                                <img class="center-block img-thumbnail img-responsive img-circle" src="images/curtischong.jpg" />
+                                <p>Curtis is a hacker from Pierre Elliot Trudeau and is part of TOHC’s Sponsorship Team. You will find him glued to his computer screen and at hackathons around Toronto. He is currently working on a variety of projects involving virtual reality.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -190,7 +200,7 @@
                     <h1>Upcoming Events</h1>
                     <div class="panel-group">
                         <div class="col-sm-6 col-lg-4">
-                            <div class="panel event">
+                            <div class="panel event confirmed" data-toggle="modal" data-target="#webdesign-modal">
                                 <div class="text-center">
                                     <h3>Intro to Web Design</h3>
                                     <h4>April 29, 2016</h4>
@@ -205,6 +215,27 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="webdesign-modal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title">Intro to Web Design</h3>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Location: Mozilla, 366 Adelaide St W Suite 500, Toronto</h4>
+                        <h4>Date: Friday, April 29, 2016</h4>
+                        <h4>Time: 6:00 PM - 9:00 PM</h4>
+                        <p>Intro to Web Design is an event for aspiring designers or anyone who wants a chance to be exposed to the skills and tools of the web design industry. Participants will engage in a series of hands-on workshops at Mozilla's headquarters in downtown Toronto. The evening will also provide a networking opportunity with industry professionals and web specialists.</p>
+                        <p>Space is limited, so be sure to register now!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="./webdesign" target="_blank" class="btn btn-default register-button">Register</a>
+                        <button type="button" class="btn btn-default close-button" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -245,6 +276,19 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scrolling.js"></script>
+    <script>
+        $(function() {
+            var eventModals = ["webdesign"];
+            var target = document.location.hash.replace("#", "");
+            if (target.length) {
+                var i = $.inArray(target, eventModals);
+                if (i > -1) {
+                    $(document).scrollTop($("#events").offset().top);
+                    $('#'+eventModals[i]+'-modal').modal('show');
+                }
+            }
+        });
+    </script>
 
 </body>
 

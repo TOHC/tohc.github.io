@@ -111,6 +111,12 @@ html, body {
     margin: 8px auto;
 }
 
+@media(min-width:767px) {
+    #events .modal p {
+        font-size: 1.2em;
+    }
+}
+
 #faq h4 {
     margin-bottom: 32px;
 }
