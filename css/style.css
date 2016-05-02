@@ -117,6 +117,19 @@ html, body {
     }
 }
 
+@media(min-width: 767px) {
+    .sponsor-images img {
+        max-width: 25%;
+        margin: 16px;
+    }
+}
+
+.sponsor-images img {
+    width: 75%;
+    height: 75%;
+    margin: 32px;
+}
+
 #faq h4 {
     margin-bottom: 32px;
 }
@@ -148,13 +161,14 @@ section {
 
 .about-section,
 .team-section,
-.contact-section {
+.faq-section {
     background: #fff;
     padding-top: 150px;
 }
 
 .events-section,
-.faq-section {
+.sponsors-section,
+.contact-section {
     background: #f7f7f7;
     padding-top: 150px;
 }
