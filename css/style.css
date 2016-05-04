@@ -117,17 +117,29 @@ html, body {
     }
 }
 
-@media(min-width: 767px) {
-    .sponsor-images img {
-        max-width: 25%;
-        margin: 16px;
-    }
+.sponsor-images {
+    margin-bottom: 32px;
 }
 
 .sponsor-images img {
-    width: 75%;
-    height: 75%;
-    margin: 32px;
+    margin: 8px;
+    max-width: 30%;
+    max-height: 200px;
+}
+
+.sponsor-images img.wide {
+    max-width: 50%;
+}
+
+@media (min-width: 768px) {
+    .sponsor-images img {
+        margin: 16px;
+        max-width: 20%;
+        max-height: 200px;
+    }
+    .sponsor-images img.wide {
+        max-width: 35%;
+    }
 }
 
 #faq h4 {
