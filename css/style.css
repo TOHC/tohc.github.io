@@ -243,6 +243,13 @@ a {
     background-image: linear-gradient(rgba(22, 22, 53, 0.7), rgba(22, 22, 53, 0.7)), url('../images/bg3.jpg');
 }
 
+.bg4 {
+    background-image: -webkit-linear-gradient(rgba(22, 22, 53, 0.7), rgba(22, 22, 53, 0.7)), url('../images/bg4.jpg');
+    background-image: -o-linear-gradient(rgba(22, 22, 53, 0.7), rgba(22, 22, 53, 0.7)), url('../images/bg4.jpg');
+    background-image: -moz-linear-gradient(rgba(22, 22, 53, 0.7), rgba(22, 22, 53, 0.7)), url('../images/bg4.jpg');
+    background-image: linear-gradient(rgba(22, 22, 53, 0.7), rgba(22, 22, 53, 0.7)), url('../images/bg4.jpg');
+}
+
 .btn-circle {
     width: 70px;
     height: 70px;
