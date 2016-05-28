@@ -33,9 +33,17 @@ html, body {
 }
 
 .navbar-brand {
-    color: #A6A6FF !important;
     font-size: 1.5em;
     font-weight: 500;
+    font-family: 'Aldrich', sans-serif;
+}
+
+.navbar-brand .color1 {
+    color: #827BBE !important;
+}
+
+.navbar-brand .color2 {
+    color: #CCC !important;
 }
 
 .active .page-scroll {
