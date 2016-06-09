@@ -208,7 +208,7 @@ h1 {
 
 a {
     text-decoration: none !important;
-    color: black;
+    color: black !important;
     font-weight: bolder;
     word-wrap: break-word;
 }
