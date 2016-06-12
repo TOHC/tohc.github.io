@@ -18,15 +18,15 @@ html, body {
 
 .intro-content .intro-text {
 	margin: 0;
-	font-size: 72px;
+	font-size: 96px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 550px) {
 	.intro-content {
 		width: 100%;
 	}
 	.intro-content .intro-text {
-		font-size: 56px;
+		font-size: 64px;
 	}
 }
 
@@ -98,17 +98,17 @@ html, body {
 
 .signup-form .label {
 	color: #FFFFFF;
-	font-size: 20px;
-	margin-bottom: 12px;
+	font-size: 24px;
+	margin-bottom: 16px;
 }
 
 .signup-form input {
-	border-color: initial !important;
-	border-radius: 4px;
-	font-size: 16px;
-	padding: 4px;
+	border-width: 0;
+	font-size: 18px;
+	padding: 8px;
 	margin-bottom: 8px;
 	background-color: #FFFFFF;
+	font-family: 'Maven Pro', sans-serif;
 }
 
 .signup-form div.mce_inline_error {
