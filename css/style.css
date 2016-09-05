@@ -141,17 +141,29 @@ html, body {
 	margin: 0;
 }
 
+.event-container {
+	margin-bottom: 8px;
+}
+
 .event {
 	padding: 8px;
-	margin: 8px !important;
-	border-color: #A6A6FF;
-	background-color: #F6F6FF;
+	background-color: #6d65b3;
+	color: white;
+	cursor: default;
+	border-radius: 8px;
 }
 
 .event.confirmed {
-	border-color: #4D4DFF;
-	background-color: #DBDBFF;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+	background-color: #383267;
 	cursor: pointer;
+}
+
+.event.confirmed:hover,
+.event.confirmed:focus {
+	background-color: #252244;
 }
 
 @media(min-width:767px) {
