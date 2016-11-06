@@ -3397,6 +3397,13 @@
 
 				#banner .content.applications header ul {
 					list-style-type: none;
+					margin-bottom: 0;
+				}
+
+				#banner .content.applications header .button {
+					margin-top: 1.5em;
+					margin-bottom: 4em;
+					font-size: 0.75em;
 				}
 
 				#banner .content header p {
