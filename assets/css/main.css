@@ -3369,8 +3369,8 @@
 			z-index: 1;
 		}
 
-		#banner .content.applications {
-			text-align: left;
+		#banner .content.applications * {
+			text-align: left !important;
 		}
 
 		#banner .content.second {
