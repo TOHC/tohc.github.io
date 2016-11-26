@@ -2958,7 +2958,7 @@
 			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 			transition: transform 1s ease, opacity 1s ease;
 			background: rgba(23, 24, 32, 0.95);
-			border-style: solid;
+			/*border-style: solid;*/border: none;
 			opacity: 1;
 			position: absolute;
 		}
@@ -4019,4 +4019,148 @@
 						padding: 0;
 					}
 
+	}
+
+	#events .content {
+		width: 30em;
+	}
+
+	.event {
+		border: 1px #999 solid;
+		border-radius: 4px;
+		margin-bottom: 1.5em;
+		text-align: center;
+		-moz-transition: border-color 0.2s ease-in-out;
+		-webkit-transition: border-color 0.2s ease-in-out;
+		-ms-transition: border-color 0.2s ease-in-out;
+		transition: border-color 0.2s ease-in-out;
+		cursor: default;
+	}
+
+	.event .title,
+	.event .date {
+		color: #999;
+		-moz-transition: color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out;
+	}
+
+	.event.upcoming .title {
+		margin-top: 1em;
+		margin-bottom: 0.5em;
+	}
+
+	.event.upcoming .date {
+		margin-bottom: 1em;
+	}
+
+	a .event {
+		border-color: #fff;
+		cursor: pointer;
+	}
+
+	a .event .title,
+	a .event .date {
+		color: #fff;
+	}
+
+	a .event:hover,
+	a .event:focus {
+		border-color: #e44c65;
+	}
+
+	a .event:hover .title,
+	a .event:focus .title,
+	a .event:hover .date,
+	a .event:focus .date {
+		color: #e44c65;
+	}
+
+	.event.past {
+		margin-bottom: 0;
+	}
+
+	.event.past .title {
+		margin: 1em 0;
+	}
+
+	@media screen and (max-width: 380px) {
+		.event.past .title {
+			font-size: 0.75em;
+		}
+	}
+
+	#team .image:before,
+	#sponsors .image:before {
+		background-image: none;
+	}
+
+	#team .image {
+		width: 75%;
+		margin: 1em auto;
+		border-radius: 50%;
+	}
+
+	#team h3 {
+		margin-bottom: 0.25em;
+	}
+
+	#sponsors {
+		background: #e3e2d9;
+	}
+
+	#sponsors h2 {
+		color: #111111;
+	}
+
+	#sponsors a {
+		border: none;
+	}
+
+	#sponsors section {
+		height: 180px;
+	}
+
+	@media screen and (max-width: 1680px) {
+		#sponsors section {
+			height: 160px;
+		}
+	}
+
+	@media screen and (max-width: 1280px) {
+		#sponsors section {
+			height: 150px;
+		}
+	}
+
+	@media screen and (max-width: 980px) {
+		#sponsors section {
+			height: 180px;
+		}
+	}
+
+	@media screen and (max-width: 736px) {
+		#sponsors section {
+			height: 135px;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		#sponsors section {
+			height: 120px;
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		#sponsors section {
+			height: 90px;
+		}
+	}
+
+	#sponsors .image {
+		display: inline-block;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
 	}
