@@ -3335,7 +3335,7 @@
 		text-align: center;
 		z-index: 21;
 	}
-
+	
 		#banner:before {
 			content: '';
 			display: inline-block;
