@@ -4121,45 +4121,75 @@
 		height: 180px;
 	}
 
+	#sponsors .image {
+		display: inline-block;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
 	@media screen and (max-width: 1680px) {
+		#team section {
+			height: 360px;
+		}
 		#sponsors section {
 			height: 160px;
 		}
 	}
 
 	@media screen and (max-width: 1280px) {
+		#team section {
+			height: 290px;
+		}
 		#sponsors section {
 			height: 150px;
 		}
 	}
 
 	@media screen and (max-width: 980px) {
+		#team section {
+			height: 320px;
+		}
 		#sponsors section {
 			height: 180px;
 		}
 	}
 
 	@media screen and (max-width: 736px) {
+		#team section {
+			height: 250px;
+		}
 		#sponsors section {
 			height: 135px;
 		}
 	}
 
+	@media screen and (max-width: 610px) {
+		#team section {
+			height: 220px;
+		}
+		#team h3 {
+			font-size: 1em;
+		}
+		#team h4 {
+			font-size: 0.75em;
+		}
+	}
+
 	@media screen and (max-width: 480px) {
+		#team section {
+			height: 240px;
+		}
 		#sponsors section {
 			height: 120px;
 		}
 	}
 
 	@media screen and (max-width: 400px) {
+		#team section {
+			height: 190px;
+		}
 		#sponsors section {
 			height: 90px;
 		}
-	}
-
-	#sponsors .image {
-		display: inline-block;
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
 	}
