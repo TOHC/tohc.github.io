@@ -52,6 +52,7 @@
 
 html {
   overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -59,8 +60,6 @@ body {
   height: 100%;
   overflow-x: hidden;
   float: none;
-  margin: auto;
-
 }
 
 hr {
@@ -122,6 +121,7 @@ p {
     background-color: transparent;
     border-style: none;
     font-family: 'Montserrat', sans-serif !important;
+    max-width: 100%;
     .transition-all;
     .navbar-toggle, .navbar-toggle:focus{
         border: none;
@@ -380,11 +380,13 @@ img {
 }
 
 #team{
+    padding: 25px;
     h2{
     color: white;
     }
     background-color:  @primary;
     color: white;
+    overflow-x: hidden; 
   }
 
 .team-leader-block {
