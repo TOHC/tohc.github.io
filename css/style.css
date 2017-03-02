@@ -10,7 +10,7 @@
 
 /*cornor ribbon*/
 .cr {
-  width: 100px;
+  width: 120px;
   padding: 10px;
   position: absolute;
   text-align: center;
@@ -19,6 +19,7 @@
 .cr p{
   display: inline;
   color: white;
+  letter-spacing: 2px;
 }
 
 .cr-sticky {
