@@ -7,3 +7,26 @@
 .navbar{
   border-style:none;
 }
+
+/*cornor ribbon*/
+.cr {
+  width: 100px;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  color: #f0f0f0;
+}
+
+.cr-sticky {
+  position: fixed;
+}
+
+/* Positions */
+.cr-top    { top: 0px; }
+.cr-bottom { bottom: 25px; }
+.cr-left   { left: 0px; }
+.cr-right  { right: 0px; }
+
+/* Colors */
+.cr-upcoming   { background-color: #02c53c; }
+.cr-past      { background-color: #C53C02; }
