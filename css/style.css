@@ -35,3 +35,49 @@
 /* Colors */
 .cr-upcoming   { background-color: #02c53c; }
 .cr-past      { background-color: #C53C02; }
+
+
+.sponsor-logos{
+  padding-bottom: 75px;
+  text-align: center;
+}
+
+.sponsor-logos a{
+  opacity: .65;
+}
+
+.sponsor-logos a:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.sponsor-logos a img {
+    vertical-align: middle;
+}
+
+.sponsor-logos .platinum a img {
+    max-height: 300px;
+    max-width: 300px;
+    margin: 1.5em;
+}
+
+.sponsor-logos .gold a img {
+    max-height: 200px;
+    max-width: 200px;
+    margin: 1.5em;
+}
+.sponsor-logos .silver a img {
+    max-height: 180px;
+    max-width: 180px;
+    margin: 1.5em;
+}
+.sponsor-logos .bronze a img {
+    max-height: 140px;
+    max-width: 140px;
+    margin: 1.5em;
+}
+.sponsor-logos .other a img {
+    max-height: 100px;
+    max-width: 100px;
+    margin: 1.5em;
+}
