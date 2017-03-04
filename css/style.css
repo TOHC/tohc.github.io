@@ -81,3 +81,7 @@
     max-width: 100px;
     margin: 1.5em;
 }
+
+.contact-icon i{
+  padding-right:20px;
+}
