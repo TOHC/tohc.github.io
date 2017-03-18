@@ -342,6 +342,7 @@ p {
 .portfolioContainer {
 	margin:0 auto;
 	padding-left:15px;
+	max-width: 100%; 
 }
 .Portfolio-box {
 	float:left;
@@ -360,6 +361,31 @@ p {
 			opacity: 0.6;
 		}
 	}
+}
+
+
+@media only screen and (max-width: 767px) {
+	.Portfolio-nav li a{
+		padding:5px 16px;
+	}
+	.Portfolio-nav li{ 
+		display:block;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	.Portfolio-box{  
+		max-width:300px !important; 
+		width:96.4% !important; 
+		margin:0 !important
+	}
+	.Portfolio-box img { 
+		max-width:100%;
+	}
+	.portfolioContainer{
+		width:280px !important; 
+		margin:0 auto !important 
+	} 
 }
 img {
 	max-width:100%;
@@ -498,10 +524,7 @@ img {
 #contact{
 	background-color:  @primary;
 	text-align: center;
-	h2{
-		color: white;
-	}
-	h3{
+	h2, h3, a, i{
 		color: white;
 	}
 }
