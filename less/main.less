@@ -343,6 +343,7 @@ p {
 	margin:0 auto;
 	padding-left:15px;
 	max-width: 100%; 
+
 }
 .Portfolio-box {
 	float:left;
@@ -351,6 +352,7 @@ p {
 	overflow:hidden;
 	padding:0;
 	text-align:center;
+	margin:0 auto;
 	width:350px;
 	img {
 		-moz-transition:all 0.3s ease-in-out;
@@ -363,6 +365,32 @@ p {
 	}
 }
 
+.portfolio {
+  position: relative;
+  padding: 0; 
+  margin: auto;
+  height: 263px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 0; 
+  background-color: fade(@primary, 80%);
+  overflow: hidden;
+  width: 100%;
+  transition: .5s ease;
+  padding-top: 20%;
+  color: white; 
+
+}
+
+.portfolio:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
 
 @media only screen and (max-width: 767px) {
 	.Portfolio-nav li a{
@@ -371,6 +399,7 @@ p {
 	.Portfolio-nav li{ 
 		display:block;
 	}
+
 }
 
 @media only screen and (max-width: 479px) {
@@ -386,6 +415,14 @@ p {
 		width:280px !important; 
 		margin:0 auto !important 
 	} 
+
+	.portfolio {
+	  position: relative;
+	  padding: 0; 
+	  margin: auto;
+	  height: 250px;
+	}
+
 }
 img {
 	max-width:100%;
