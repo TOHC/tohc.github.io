@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="The Toronto Hacker Club is a student-run organization aiming to promote computer science education in high schools throughout the Greater Toronto Area.">
+		<meta name="author" content="The Toronto Hacker Club">
+		<meta name="theme-color" content="#0065a4">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#0065a4">
+		<link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+
+		<title>Toronto Hacker Club</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="less/main.less" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.isotope.js"></script>
+		<script type="text/javascript" src="js/wow.js"></script>
+		<link rel="stylesheet" href="css/animate.min.css" type="text/css">
+		<link rel="stylesheet" href="css/main.min.css" type="text/css">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+
+	</head>
+
+	<body id="apply">
+		<h2 class="section-heading">APPLY NOW</h2>
+		<hr>
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<h3>Event Coordinator</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<h3>Advertising Specialist</h3>
+			</div>
+		</div>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
+		<script>
+			wow = new WOW({
+				animateClass: 'animated',
+				offset: 30
+			});
+			wow.init();
+
+			$(window).load(function(){
+				var $container = $('.portfolioContainer'),
+				$body = $('body'),
+				colW = 375,
+				columns = null;
+				$container.isotope({
+					// disable window resizing
+					resizable: true,
+					masonry: {
+						columnWidth: colW
+					}
+				});
+
+				$(window).smartresize(function(){
+					// check if columns has changed
+					var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+					if ( currentColumns !== columns ) {
+						// set new column count
+						columns = currentColumns;
+						// apply width to container manually, then trigger relayout
+						$container.width( columns * colW )
+						.isotope('reLayout');
+					}
+				}).smartresize(); // trigger resize to set container width
+
+				$('.portfolioFilter a').click(function(){
+					$('.portfolioFilter .current').removeClass('current');
+					$(this).addClass('current');
+					var selector = $(this).attr('data-filter');
+					$container.isotope({
+						filter: selector,
+					});
+					return false;
+				});
+			});
+		</script>
+	</body>
+
+</html>
