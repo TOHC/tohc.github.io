@@ -1,448 +1,893 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="The Toronto Hacker Club is a student-run organization aiming to promote computer science education in high schools throughout the Greater Toronto Area.">
-		<meta name="author" content="The Toronto Hacker Club">
-		<meta name="theme-color" content="#0065a4">
-		<meta name="apple-mobile-web-app-status-bar-style" content="#0065a4">
-		<link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <head>
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Vamous</title>
+        <!-- css files -->
+        <!-- fav icon -->
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+        <!-- bootstrap css file -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- fontawesome css file -->
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <!-- Magnific popup library -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <!-- owl carousel css files -->
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <!-- custom css file -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <!-- preloader -->
+        
+        <div id="preloader">
+            <div class="thecube">
+                <div class="cube c1"></div>
+                <div class="cube c2"></div>
+                <div class="cube c4"></div>
+                <div class="cube c3"></div>
+            </div>
+        </div>
+        
+        <!-- main nav bar -->
+        <nav id="main-nav">
+            <div class="container">
+                <a href=""><img id="nav-logo" src="http://placehold.it/342x90" alt="logo"></a>
+                <i id="bars" class="fa fa-bars" aria-hidden="true"></i>
+                <ul>
+                    <li class="active"><a>home</a></li>
+                    <li><a>about</a></li>
+                    <li><a>services</a></li>
+                    <li><a>portfolio</a></li>
+                    <li><a>team</a></li>
+                    <li><a>blog</a></li>
+                    <li><a>pricing</a></li>
+                    <li><a>contact</a></li>
+                </ul>
+                
+            </div>
+        </nav>
+        
+        <!-- header -->
+        <header id="home-header">
+            <div class="parallax-window" data-parallax="scroll" data-image-src="http://placehold.it/1600x900"></div>
+            <div class="container">
+                <h1><span id="hi">hi, </span><span id="name"></span></h1>
+                <h2><span id="job">.</span></h2>
+                <div class="buttons">
+                    <button id="b-portfolio">see portfolio</button>
+                    <button id="b-contact">contact me</button>
+                </div>
+                <div class="social-media">
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+                <div class="down">
+                    <i id="down-icon" class="fa fa-angle-double-down" aria-hidden="true"></i>
+                </div>
+            </div>
+        </header>
+        
+        <!-- about section -->
+        <section id="about">
+            <div class="container">
+                <h2 class="section-header">about me</h2>
+                <div class="col-md-5 about-left">
+                    <div class="card">
+                        <img src="http://placehold.it/400x400" alt="jhon">
+                        <p><span>name: </span>jhon doe</p>
+                        <p><span>age: </span>25 years</p>
+                        <p><span>from: </span>paris, france</p>
+                        <p><span>job: </span>web &amp; graphic designer</p>
+                        <p><span>phone: </span>+ 999 999 999</p>
+                        <p><span>email: </span><span class="mail">yourmail@domain.com</span></p>
+                    </div>
+                </div>
+                
+                <div class="col-md-7 about-right" id="skills">
+                    <h4>my skills</h4>
+                    <div class="skill">
+                        <h5>HTML &amp; CSS</h5>
+                        <div class="back"></div>
+                        <div id="s-html" class="percentage"></div>
+                    </div>
+                    <div class="skill">
+                        <h5>javaScript</h5>
+                        <div class="back"></div>
+                        <div id="s-javascript" class="percentage"></div>
+                    </div>
+                    <div class="skill">
+                        <h5>JQuery</h5>
+                        <div class="back"></div>
+                        <div id="s-jquery" class="percentage"></div>
+                    </div>
+                    <div class="skill">
+                        <h5>BootStrap</h5>
+                        <div class="back"></div>
+                        <div id="s-bootstrap" class="percentage"></div>
+                    </div>
+                    <div class="skill">
+                        <h5>PhotoShop</h5>
+                        <div class="back"></div>
+                        <div id="s-photoshop" class="percentage"></div>
+                    </div>
+                    <div class="skill">
+                        <h5>marketing</h5>
+                        <div class="back"></div>
+                        <div id="s-marketing" class="percentage"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- services section -->
+        <section id="services">
+            <div class="container">
+                <h2 class="section-header">services</h2>
+                <div class="col-md-4 service-o">
+                    <div class="service left" id="service-left1">
+                        <div class="bg">
+                            <div class="content">
+                                <i class="fa fa-html5" aria-hidden="true"></i>
+                                <p class="title">web design</p>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 service-o">
+                    <div class="service top" id="service-top1">
+                        <div class="bg">
+                            <div class="content">
+                                <i class="fa fa-code" aria-hidden="true"></i>
+                                <p class="title">web development</p>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 service-o">
+                    <div class="service right" id="service-right1">
+                        <div class="bg">
+                            <div class="content">
+                                <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                <p class="title">graphic design</p>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 service-o">
+                    <div class="service left" id="service-left2">
+                        <div class="bg">
+                            <div class="content">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                <p class="title">marketing</p>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 service-o">
+                    <div class="service bottom" id="service-bottom1">
+                        <div class="bg">
+                            <div class="content">
+                                <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                <p class="title">free support</p>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 service-o">
+                    <div class="service right" id="service-right2">
+                        <div class="bg">
+                            <div class="content">
+                                <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+                                <p class="title">writing</p>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- statistics section -->
+        <section id="statistics">
+            <div class="container">
+                <div class="col-md-3 part">
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <p class="num" id="lines-of-code">+</p>
+                    <p class="title">lines of code</p>
+                </div>
+                
+                <div class="col-md-3 part">
+                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                    <p class="num" id="cups-of-coffee">+</p>
+                    <p class="title">cups of coffee</p>
+                </div>
+                
+                <div class="col-md-3 part">
+                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                    <p class="num" id="complete-projects">+</p>
+                    <p class="title">complete projects</p>
+                </div>
+                
+                <div class="col-md-3 part">
+                    <i class="fa fa-male" aria-hidden="true"></i>
+                    <p class="num" id="satisfied-customers">+</p>
+                    <p class="title">satisfied customers</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- portfolio -->
+        <section id="portfolio">
+            <div class="container">
+                <h2 class="section-header">my portfolio</h2>
+                <div class="buttons" data-toggle="buttons">
+                    <button class="active filter" data-filter="all">all</button>
+                    <button class="filter" data-filter=".web">web</button>
+                    <button class="filter" data-filter=".graphic">graphic</button>
+                </div>
+                
+                <div id="items-container">
+                    <!-- portfolio item 1 -->
+                    <div class="item-o col-md-4 web mix">
+                        <div class="item web">
+                            <img src="http://placehold.it/610x450" alt="">
+                            <div class="over">
+                                <h4>project name</h4>
+                                <p class="category">web design</p>
+                                <a href="#popup1" class="popup-link"><span class="open-icon"><i class="fa fa-search" aria-hidden="true"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- popup 1 -->
+                    
+                    <div id="popup1" class="white-popup mfp-hide">
+                        <h3>project title</h3>
+                        <h5>web design</h5>
+                        <img src="http://placehold.it/610x450" alt="p1">
+                        <p class="desc">You may put any HTML here. This is dummy copy. It is not meant to       be read. 
+                            Proactively maximize transparent e-commerce before fully tested niche markets. Efficiently innovate stand-alone markets with open-source interfaces. Compellingly simplify multifunctional intellectual capital and backward-compatible "outside the box"
+                        </p>
+                    </div>
+                    
+                    <!-- portfolio item 2 -->
+                    <div class="item-o col-md-4 graphic mix">
+                        <div class="item web">
+                            <img src="http://placehold.it/610x450" alt="">
+                            <div class="over">
+                                <h4>project name</h4>
+                                <p class="category">graphic design</p>
+                                <a href="#popup2" class="popup-link"><span class="open-icon"><i class="fa fa-search" aria-hidden="true"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- popup 2 -->
+                    
+                    <div id="popup2" class="white-popup mfp-hide">
+                        <h3>project title</h3>
+                        <h5>web design</h5>
+                        <img src="http://placehold.it/610x450" alt="p1">
+                        <p class="desc">You may put any HTML here. This is dummy copy. It is not meant to       be read. 
+                            Proactively maximize transparent e-commerce before fully tested niche markets. Efficiently innovate stand-alone markets with open-source interfaces. Compellingly simplify multifunctional intellectual capital and backward-compatible "outside the box"
+                        </p>
+                    </div>
+                    
+                    <!-- portfolio item 3 -->
+                    <div class="item-o col-md-4 web mix">
+                        <div class="item web">
+                            <img src="http://placehold.it/610x450" alt="">
+                            <div class="over">
+                                <h4>project name</h4>
+                                <p class="category">web design</p>
+                                <a href="#popup3" class="popup-link"><span class="open-icon"><i class="fa fa-search" aria-hidden="true"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- popup 3 -->
+                    
+                    <div id="popup3" class="white-popup mfp-hide">
+                        <h3>project title</h3>
+                        <h5>web design</h5>
+                        <img src="http://placehold.it/610x450" alt="p1">
+                        <p class="desc">You may put any HTML here. This is dummy copy. It is not meant to       be read. 
+                            Proactively maximize transparent e-commerce before fully tested niche markets. Efficiently innovate stand-alone markets with open-source interfaces. Compellingly simplify multifunctional intellectual capital and backward-compatible "outside the box"
+                        </p>
+                    </div>
+                    
+                    <!-- portfolio item 4 -->
+                    <div class="item-o col-md-4 graphic mix">
+                        <div class="item web">
+                            <img src="http://placehold.it/610x450" alt="">
+                            <div class="over">
+                                <h4>project name</h4>
+                                <p class="category">graphic design</p>
+                                <a href="#popup4" class="popup-link"><span class="open-icon"><i class="fa fa-search" aria-hidden="true"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- popup 4 -->
+                    
+                    <div id="popup4" class="white-popup mfp-hide">
+                        <h3>project title</h3>
+                        <h5>web design</h5>
+                        <img src="http://placehold.it/610x450" alt="p1">
+                        <p class="desc">You may put any HTML here. This is dummy copy. It is not meant to       be read. 
+                            Proactively maximize transparent e-commerce before fully tested niche markets. Efficiently innovate stand-alone markets with open-source interfaces. Compellingly simplify multifunctional intellectual capital and backward-compatible "outside the box"
+                        </p>
+                    </div>
+                    
+                    <!-- portfolio item 5 -->
+                    <div class="item-o col-md-4 graphic mix">
+                        <div class="item web">
+                            <img src="http://placehold.it/610x450" alt="">
+                            <div class="over">
+                                <h4>project name</h4>
+                                <p class="category">graphic design</p>
+                                <a href="#popup5" class="popup-link"><span class="open-icon"><i class="fa fa-search" aria-hidden="true"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- popup 5 -->
+                    
+                    <div id="popup5" class="white-popup mfp-hide">
+                        <h3>project title</h3>
+                        <h5>web design</h5>
+                        <img src="http://placehold.it/610x450" alt="p1">
+                        <p class="desc">You may put any HTML here. This is dummy copy. It is not meant to       be read. 
+                            Proactively maximize transparent e-commerce before fully tested niche markets. Efficiently innovate stand-alone markets with open-source interfaces. Compellingly simplify multifunctional intellectual capital and backward-compatible "outside the box"
+                        </p>
+                    </div>
+                    
+                    <!-- portfolio item 6 -->
+                    <div class="item-o col-md-4 web mix">
+                        <div class="item web">
+                            <img src="http://placehold.it/610x450" alt="">
+                            <div class="over">
+                                <h4>project name</h4>
+                                <p class="category">web design</p>
+                                <a href="#popup6" class="popup-link"><span class="open-icon"><i class="fa fa-search" aria-hidden="true"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- popup 5 -->
+                    
+                    <div id="popup6" class="white-popup mfp-hide">
+                        <h3>project title</h3>
+                        <h5>web design</h5>
+                        <img src="http://placehold.it/610x450" alt="p1">
+                        <p class="desc">You may put any HTML here. This is dummy copy. It is not meant to       be read. 
+                            Proactively maximize transparent e-commerce before fully tested niche markets. Efficiently innovate stand-alone markets with open-source interfaces. Compellingly simplify multifunctional intellectual capital and backward-compatible "outside the box"
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- work with me -->
+        <section id="work-w-me">
+            <div class="container">
+                <h2 class="section-header">Did you like my works?</h2>
+                <button id="work-wz-me">work with me</button>
+            </div>
+        </section>
+        
+        <!-- team -->
+        <section id="team">
+            <div class="container">
+                <h2 class="section-header">our professional team</h2>
+                <div class="owl-carousel owl-theme" id="team-slider">
+                    <!-- member 1 -->
+                    <div class="member-o">
+                        <div class="member">
+                            <img src="http://placehold.it/400x400" alt="">
+                            <div class="info">
+                                <p class="name">jhon doe</p>
+                                <p class="job">web designer</p>
+                                <div class="social-media">
+                                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- member 2 -->
+                    <div class="member-o">
+                        <div class="member">
+                            <img src="http://placehold.it/400x400" alt="">
+                            <div class="info">
+                                <p class="name">mark rodriguez</p>
+                                <p class="job">web developer</p>
+                                <div class="social-media">
+                                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- member 3 -->
+                    <div class="member-o">
+                        <div class="member">
+                            <img src="http://placehold.it/400x400" alt="">
+                            <div class="info">
+                                <p class="name">mary queen</p>
+                                <p class="job">photographer</p>
+                                <div class="social-media">
+                                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- member 4 -->
+                    <div class="member-o">
+                        <div class="member">
+                            <img src="http://placehold.it/400x400" alt="">
+                            <div class="info">
+                                <p class="name">james king</p>
+                                <p class="job">marketer</p>
+                                <div class="social-media">
+                                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- member 5 -->
+                    <div class="member-o">
+                        <div class="member">
+                            <img src="http://placehold.it/400x400" alt="">
+                            <div class="info">
+                                <p class="name">julia austin</p>
+                                <p class="job">graphic designer</p>
+                                <div class="social-media">
+                                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                                    <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- subscribe -->
+        <section id="subscribe">
+            <div class="container">
+                <h2 class="section-header">subscribe now</h2>
+                <div id="sub">
+                    <input type="email" placeholder="Email">
+                    <input type="submit" value="subscribe">
+                </div>
+            </div>
+        </section>
+        
+        <!-- latest blogs section -->
+        <section id="blogs">
+            <div class="container">
+                <h2 class="section-header">our latest blogs</h2>
+                <div class="owl-carousel owl-theme" id="blogs-slider">
+                    
+                    <!-- blog 1 -->
+                    <div class="blog-o">
+                        <div class="blog">
+                            <div class="image">
+                                <img src="http://placehold.it/610x450" alt="blog">
+                                <div class="sta">
+                                    <span class="part">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <span>15</span>
+                                    </span>
 
-		<title>Toronto Hacker Club</title>
+                                    <span class="part">
+                                        <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                        <span>6</span>
+                                    </span>
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="stylesheet" href="less/main.less" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.isotope.js"></script>
-		<script type="text/javascript" src="js/wow.js"></script>
-		<link rel="stylesheet" href="css/animate.min.css" type="text/css">
-		<link rel="stylesheet" href="css/main.min.css" type="text/css">
-		<link rel="stylesheet" href="css/style.css" type="text/css">
-	</head>
+                                    <span class="part">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span>19 hours ago</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <a href="single-blog.html"><h4>don't just be a designer - be a good one</h4></a>
+                            <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...
+                            </p>
+                            <div class="button-o">
+                                <a href="single-blog.html">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- blog 2 -->
+                    <div class="blog-o">
+                        <div class="blog">
+                            <div class="image">
+                                <img src="http://placehold.it/610x450" alt="blog">
+                                <div class="sta">
+                                    <span class="part">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <span>15</span>
+                                    </span>
 
-	<body id="page-top">
-		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top zoomInDown">
-			<div class="navbar-inner">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-content" >
-						<i class="fa fa-bars fa-1x" aria-hidden="true"></i>
-					</button>
-				</div>
+                                    <span class="part">
+                                        <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                        <span>6</span>
+                                    </span>
 
-				<div class="collapse navbar-collapse" id="nav-content">
-					<ul class="nav navbar-nav">
-						<li>
-							<a class="page-scroll" href="#home">Home</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#about">About Us</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#events">Events</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#team">The Team</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#sponsors">Sponsors</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#contact">Contact</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+                                    <span class="part">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span>19 hours ago</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <a href="single-blog.html"><h4>don't just be a designer - be a good one</h4></a>
+                            <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...
+                            </p>
+                            <div class="button-o">
+                                <a href="single-blog.html">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- blog 3 -->
+                    <div class="blog-o">
+                        <div class="blog">
+                            <div class="image">
+                                <img src="http://placehold.it/610x450" alt="blog">
+                                <div class="sta">
+                                    <span class="part">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <span>15</span>
+                                    </span>
 
-		<section class="panels container-fluid" id="home">
-			<div class="jumbotron jumbotron-fluid wow fadeIn vertical-center">
-				<div class="container">
-					<h2 class="section-heading">We're the Toronto Hacker Club</h2>
-					<hr class="light">
-					<div id="1" id="description">
-						<p><i>We empower our generation for a brighter future.</i></p>
-					</div>
-					<br>
-          <center>
-            <a class="arrow" href="#about">
-              <i class="fa fa-angle-down fa-4x"></i>
-            </a>
-          </center>
-				</div>
-			</div>
-		</section>
+                                    <span class="part">
+                                        <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                        <span>6</span>
+                                    </span>
 
-		<section class="panels container-fluid" id="about">
-			<h2 class="section-heading">ABOUT US</h2>
-			<hr>
-			<div class="row vertical-center">
-				<div class ="col-lg-6 wow slideInLeft">
-					<p><center>The Toronto Hacker Club is a student-run organization aiming to promote computer science education in high schools throughout the Greater Toronto Area.</center></p>
-				</div>
-				<div class="col-lg-6 wow slideInRight">
-					<p><center>We host hackathons and workshops for high school students and have been awarded the "Building Community through Sciences and Technology Award" by the Toronto Youth Cabinet.</center></p>
-				</div>
-			</div>
-		</section>
+                                    <span class="part">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span>19 hours ago</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <a href="single-blog.html"><h4>don't just be a designer - be a good one</h4></a>
+                            <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...
+                            </p>
+                            <div class="button-o">
+                                <a href="single-blog.html">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- blog 4 -->
+                    <div class="blog-o">
+                        <div class="blog">
+                            <div class="image">
+                                <img src="http://placehold.it/610x450" alt="blog">
+                                <div class="sta">
+                                    <span class="part">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <span>15</span>
+                                    </span>
 
-		<section class="panels container-fluid" id="events">
-			<h2 class="section-heading">EVENTS</h2>
-			<hr>
-			<div class="portfolioFilter">
-				<ul class="Portfolio-nav wow fadeIn delay-02s">
-					<li><a href="#" data-filter="*" class="current" >All</a></li>
-					<li><a href="#" data-filter=".hackathons" >Hackathons</a></li>
-					<li><a href="#" data-filter=".workshops" >Workshops</a></li>
-				</ul>
-			</div>
-			</div>
-			<div class="portfolioContainer">
-				<div class="Portfolio-box hackathons upcoming">
-					<div class="portfolio">
-						<a href="#"><img src="images/event-holder.png" class="landscape" alt=""></a>
-						<div class="overlay">
-							<p>XX/XX/XXXX</p>
-							<p>Lorem ipsum dolor sit amet and that's all I remember of Lorem Ipsum</p>
-						</div>
-					 </div>	
-					<h3>Back in Hacks</h3>
-				</div>
+                                    <span class="part">
+                                        <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                        <span>6</span>
+                                    </span>
 
-				<div class="Portfolio-box workshops past">
-					<div class="portfolio">
-						<a href="#"><img src="images/events/jsboost.jpg" alt=""></a>
+                                    <span class="part">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span>19 hours ago</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <a href="single-blog.html"><h4>don't just be a designer - be a good one</h4></a>
+                            <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...
+                            </p>
+                            <div class="button-o">
+                                <a href="single-blog.html">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- blog 5 -->
+                    <div class="blog-o">
+                        <div class="blog">
+                            <div class="image">
+                                <img src="http://placehold.it/610x450" alt="blog">
+                                <div class="sta">
+                                    <span class="part">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <span>15</span>
+                                    </span>
 
-						<div class="overlay">
-							<p>XX/XX/XXXX</p>
-							<p>Lorem ipsum dolor sit amet and that's all I remember of Lorem Ipsum</p>
-						</div>
-					</div>
-					<h3>JS Boost</h3>
-				</div>
-				<div class=" Portfolio-box workshops past">
-					<div class="portfolio">
-						<a href="#"><img src="images/events/intro-to-cybersecurity.jpg" alt=""></a>
-						<div class="overlay">
-							<p>XX/XX/XXXX</p>
-							<p>Lorem ipsum dolor sit amet and that's all I remember of Lorem Ipsum</p>
-						</div>
-					</div>
-					<h3>Intro to Cybersecurity</h3>
-				</div>
-				<div class="Portfolio-box hackathons past">
-					<div class="portfolio">
-						<a href="#"><img src="images/events/thacks2016.jpg" alt=""></a>
-						<div class="overlay">
-							<p>XX/XX/XXXX</p>
-							<p>Lorem ipsum dolor sit amet and that's all I remember of Lorem Ipsum</p>
-						</div>
-					</div>
-					<h3>T.Hacks</h3>
-				</div>
-				<div class=" Portfolio-box workshops past">
-					<div class="portfolio">
-						<a href="#"><img src="images/events/intro-to-web-design.jpg" alt=""></a>
-						<div class="overlay">
-							<p>XX/XX/XXXX</p>
-							<p>Lorem ipsum dolor sit amet and that's all I remember of Lorem Ipsum</p>
-						</div>
-					</div>
-					<h3>Intro to Web Design</h3>
-				</div>
-				<div class="Portfolio-box hackathons past">
-					<div class="portfolio">
-						<a href="#"><img src="images/events/data-hacks.jpg" alt=""></a>
-						<div class="overlay">
-							<p>XX/XX/XXXX</p>
-							<p>Lorem ipsum dolor sit amet and that's all I remember of Lorem Ipsum</p>
-						</div>
-					</div>
-					<h3>DataHacks</h3>
-				</div>
-				<div class="Portfolio-box hackathons past">
-					<div class="portfolio">
-						<a href="#"><img src="images/events/local-hack-day.jpg" alt=""></a>
-						<div class="overlay">
-							<p>XX/XX/XXXX</p>
-							<p>Lorem ipsum dolor sit amet and that's all I remember of Lorem Ipsum</p>
-						</div>
-					</div>
-					<h3>Local Hack Day</h3>
-				</div>
-			</div>
-		</section>
+                                    <span class="part">
+                                        <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                        <span>6</span>
+                                    </span>
 
-		<section class="panels container-fluid" id="team">
-			<h2 class="section-heading">THE TEAM</h2>
-			<hr class="light"><center>
-				<div class="team-leader-block">
-					<div class="team-leader-box">
-						<div class="team-leader wow fadeInUp">
-							<div class="team-leader-shadow"></div>
-							<img src="images/team/peterstakoun.jpg" alt="Peter Stakoun">
-							<ul>
-								<li><a target="_blank" href="#mailto:peter@torontohacker.club" class="fa-envelope"></a></li>
-							</ul>
-						</div>
-						<h3 class="wow fadeInUp" data-wow-delay="0.2s">Peter Stakoun</h3>
-						<span class="wow fadeInUp" data-wow-delay="0.2s">President</span>
-					</div>
-
-					<div class="team-leader-box">
-						<div class="team-leader wow fadeInUp delay-03s">
-							<div class="team-leader-shadow"></div>
-							<img src="images/team/adamfahs.jpg" alt="Adam Fahs">
-							<ul>
-								<li><a target="_blank" href="#mailto:adam@torontohacker.club" class="fa-envelope"></a></li>
-							</ul>
-						</div>
-						<h3 class="wow fadeInUp " data-wow-delay="0.2s">Adam Fahs</h3>
-						<span class="wow fadeInUp " data-wow-delay="0.2s">Vice President</span>
-					</div>
-					<div class="team-leader-box">
-						<div class="team-leader wow fadeInUp delay-03s">
-							<div class="team-leader-shadow"></div>
-							<img src="images/team/curtischong.jpg" alt="Curtis Chong">
-							<ul>
-								<li><a target="_blank" href="#mailto:curtis@torontohacker.club" class="fa-envelope"></a></li>
-							</ul>
-						</div>
-						<h3 class="wow fadeInUp " data-wow-delay="0.2s">Curtis Chong</h3>
-						<span class="wow fadeInUp " data-wow-delay="0.2s">Corporate Director</span>
-					</div>
-					<div class="team-leader-box">
-						<div class="team-leader wow fadeInUp delay-03s">
-							<div class="team-leader-shadow"></div>
-							<img src="images/team/juliapetolescu.jpg" alt="Julia Petolescu">
-							<ul>
-								<li><a target="_blank" href="#mailto:julia@torontohacker.club" class="fa-envelope"></a></li>
-							</ul>
-						</div>
-						<h3 class="wow fadeInUp " data-wow-delay="0.2s">Julia Petolescu</h3>
-						<span class="wow fadeInUp " data-wow-delay="0.2s">Logistics Director</span>
-					</div>
-					<div class="team-leader-box">
-						<div class="team-leader wow fadeInUp delay-03s">
-							<div class="team-leader-shadow"></div>
-							<img src="images/team/benjaminma.jpg" alt="Benjamin Ma">
-							<ul>
-								<li><a target="_blank" href="#mailto:benjamin@torontohacker.club" class="fa-envelope"></a></li>
-							</ul>
-						</div>
-						<h3 class="wow fadeInUp " data-wow-delay="0.2s">Benjamin Ma</h3>
-						<span class="wow fadeInUp " data-wow-delay="0.2s">Marketing Director</span>
-					</div>
-					<div class="team-leader-box">
-						<div class="team-leader wow fadeInUp delay-03s">
-							<div class="team-leader-shadow"></div>
-							<img src="images/team/ericli.jpg" alt="Eric Li">
-							<ul>
-								<li><a target="_blank" href="#mailto:eric@torontohacker.club" class="fa-envelope"></a></li>
-							</ul>
-						</div>
-						<h3 class="wow fadeInUp " data-wow-delay="0.2s">Eric Li</h3>
-						<span class="wow fadeInUp " data-wow-delay="0.2s">Event Coordinator</span>
-					</div>
-
-					<div class="team-leader-box">
-						<div class="team-leader wow fadeInUp delay-03s">
-							<div class="team-leader-shadow"></div>
-							<img src="images/team/carolchen.jpg" alt="Carol Chen">
-							<ul>
-								<li><a target="_blank" href="#mailto:carol@torontohacker.club" class="fa-envelope"></a></li>
-							</ul>
-						</div>
-						<h3 class="wow fadeInUp " data-wow-delay="0.2s">Carol Chen</h3>
-						<span class="wow fadeInUp " data-wow-delay="0.2s">Event Coordinator</span>
-					</div>
-					<div class="team-leader-box">
-						<div class="team-leader wow fadeInUp delay-03s">
-							<div class="team-leader-shadow"></div>
-							<img src="images/team/simonguo.jpg" alt="Simon Guo">
-							<ul>
-								<li><a target="_blank" href="#mailto:simon@torontohacker.club" class="fa-envelope"></a></li>
-							</ul>
-						</div>
-						<h3 class="wow fadeInUp " data-wow-delay="0.2s">Simon Guo</h3>
-						<span class="wow fadeInUp " data-wow-delay="0.2s">Event Coordinator</span>
-					</div>
-					<div class="team-leader-box">
-						<div class="team-leader wow fadeInUp delay-03s">
-							<div class="team-leader-shadow"></div>
-							<img src="images/team/marceloneil.jpg" alt="Marcel O'Neil">
-							<ul>
-								<li><a target="_blank" href="#mailto:marcel@torontohacker.club" class="fa-envelope"></a></li>
-							</ul>
-						</div>
-						<h3 class="wow fadeInUp " data-wow-delay="0.2s">Marcel O'Neil</h3>
-						<span class="wow fadeInUp " data-wow-delay="0.2s">Corporate Relations</span>
-					</div>
-					<div class="team-leader-box">
-						<div class="team-leader wow fadeInUp delay-03s">
-							<div class="team-leader-shadow"></div>
-							<img src="images/team/kevinshen.jpg" alt="Kevin Shen">
-							<ul>
-								<li><a target="_blank" href="#mailto:kevin@torontohacker.club" class="fa-envelope"></a></li>
-							</ul>
-						</div>
-						<h3 class="wow fadeInUp " data-wow-delay="0.2s">Kevin Shen</h3>
-						<span class="wow fadeInUp " data-wow-delay="0.2s">Corporate Relations</span>
-					</div>
-					<div class="team-leader-box">
-						<div class="team-leader wow fadeInUp delay-03s">
-							<div class="team-leader-shadow"></div>
-							<img src="images/team/sunrosebilling.jpg" alt="Sunrose Billing">
-							<ul>
-								<li><a target="_blank" href="#mailto:sunrose@torontohacker.club" class="fa-envelope"></a></li>
-							</ul>
-						</div>
-						<h3 class="wow fadeInUp " data-wow-delay="0.2s">Sunrose Billing</h3>
-						<span class="wow fadeInUp " data-wow-delay="0.2s">Corporate Relations</span>
-					</div>
-					<div class="team-leader-box">
-						<div class="team-leader wow fadeInUp delay-03s">
-							<div class="team-leader-shadow"></div>
-							<img src="images/team/jasminechung.jpg" alt="Jasmine Chung">
-							<ul>
-								<li><a target="_blank" href="#mailto:jasmine@torontohacker.club" class="fa-envelope"></a></li>
-							</ul>
-						</div>
-						<h3 class="wow fadeInUp " data-wow-delay="0.2s">Jasmine Chung</h3>
-						<span class="wow fadeInUp " data-wow-delay="0.2s">Social Media</span>
-					</div>
-					<div class="team-leader-box">
-						<div class="team-leader wow fadeInUp delay-03s">
-							<div class="team-leader-shadow"></div>
-							<img src="images/team/lavanyasinha.jpg" alt="Lavanya Sinha">
-							<ul>
-								<li><a target="_blank" href="#mailto:lavanya@torontohacker.club" class="fa-envelope"></a></li>
-							</ul>
-						</div>
-						<h3 class="wow fadeInUp " data-wow-delay="0.2s">Lavanya Sinha</h3>
-						<span class="wow fadeInUp " data-wow-delay="0.2s">Advertising</span>
-					</div></center>
-					<hr>
-					<center>
-						<h3>Do you want to work with the best of the best?</h3>
-						<hr>
-						<a href="apply" target="_blank"><button class="button button-1">APPLY NOW</button></a>
-					</center>
-					<hr>
-		</section>
-
-		<section class="panels container-fluid" id="sponsors">
-			<h2 class="section-heading">SPONSORS</h2>
-			<hr>
-			<div class="sponsor-logos">
-				<div class="row">
-					<div class="col-xs-12 platinum">
-						<a href="http://www.rbcroyalbank.com" target="_blank"><img class=""src="images/sponsors/rbc.png" /></a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 gold">
-						<a href="http://informatica.com" target="_blank"><img src="images/sponsors/informatica.png" /></a>
-						<a href="http://dotto-one.com" target="_blank"><img src="images/sponsors/dotto-one.png" /></a>
-						<a href="http://collyerbenson.com" target="_blank"><img src="images/sponsors/collyerbenson.png" /></a>
-						<a href="http://hover.com" target="_blank"><img src="images/sponsors/hover.png" /></a>
-						<a href="http://get.club" target="_blank"><img src="images/sponsors/club.png" /></a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 silver">
-						<a href="http://www.phoenixsoftware.ca/" target="_blank"><img src="images/sponsors/phoenix.png" /></a>
-						<a href="http://google.com" target="_blank"><img src="images/sponsors/google.png" /></a>
-						<a href="http://mozilla.org" target="_blank"><img src="images/sponsors/mozilla.png" /></a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 bronze">
-						<a href="http://lighthouselabs.ca" target="_blank"><img src="images/sponsors/lighthouse.png" /></a>
-						<a href="http://amanah.com" target="_blank"><img src="images/sponsors/amanah.png" /></a>
-						<a href="http://northern-secondary.com" target="_blank"><img src="images/sponsors/northern.png" /></a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-2"></div>
-					<div class="col-xs-8 other">
-						<a href="http://github.com" target="_blank"><img src="images/sponsors/github.png" /></a>
-						<a href="http://hackernest.com" target="_blank"><img src="images/sponsors/hackernest.png" /></a>
-						<a href="http://get.tech" target="_blank"><img src="images/sponsors/tech.png" /></a>
-						<a href="http://clarifai.com" target="_blank"><img src="images/sponsors/clarifai.png" /></a>
-						<a href="http://indico.io" target="_blank"><img src="images/sponsors/indico.png" /></a>
-						<a href="http://choosemuse.com" target="_blank"><img src="images/sponsors/muse.png" /></a>
-						<a href="http://lanilabs.com" target="_blank"><img src="images/sponsors/lani.png" /></a>
-						<a href="http://plux.info" target="_blank"><img src="images/sponsors/plux.png" /></a>
-						<a href="http://bitalino.com" target="_blank"><img src="images/sponsors/bitalino.png" /></a>
-						<a href="http://pizzapizza.com" target="_blank"><img src="images/sponsors/pizzapizza.png" /></a>
-						<a href="http://www.sultanofsamosas.com" target="_blank"><img src="images/sponsors/samosas.png" /></a>
-					</div>
-					<div class="col-xs-2"></div>
-				</div>
-			</div>
-		</section>
-
-		<section class="panels container-fluid " id="contact">
-			<h2 class="section-heading">CONTACT US</h2>
-			<hr>
-			<h3>If you have any questions or concerns, shoot us an email at <a href="mailto:contact@torontohacker.club">contact@torontohacker.club</a>.</h3>
-			<div class="contact-icon">
-				<a href="https://www.facebook.com/torontohackerclub/" target="_blank"><i class="fa fa-facebook-official fa-2x hvr-grow" aria-hidden="true"></i></a>
-				<a href="https://www.facebook.com/groups/torontohackerclub/" target="_blank"><i class="fa fa-users fa-2x hvr-grow" aria-hidden="true"></i></a>
-				<a href="https://twitter.com/TOhackerclub" target="_blank"><i class="fa fa-twitter-square fa-2x hvr-grow" aria-hidden="true"></i></a>
-				<a href="https://www.instagram.com/torontohackerclub/" target="_blank"><i class="fa fa-instagram fa-2x hvr-grow" aria-hidden="true"></i></a>
-				<a href="mailto:contact@torontohacker.club"><i class="fa fa-envelope fa-2x hvr-grow" aria-hidden="true"></i></a>
-			</div>
-		</section>
-
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<script src="js/main.js"></script>
-		<script>
-			wow = new WOW({
-				animateClass: 'animated',
-				offset: 30
-			});
-			wow.init();
-
-			$(window).load(function(){
-				var $container = $('.portfolioContainer'),
-				$body = $('body'),
-				colW = 375,
-				columns = null;
-				$container.isotope({
-					// disable window resizing
-					resizable: true,
-					masonry: {
-						columnWidth: colW
-					}
-				});
-
-				$(window).smartresize(function(){
-					// check if columns has changed
-					var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
-					if ( currentColumns !== columns ) {
-						// set new column count
-						columns = currentColumns;
-						// apply width to container manually, then trigger relayout
-						$container.width( columns * colW )
-						.isotope('reLayout');
-					}
-				}).smartresize(); // trigger resize to set container width
-
-				$('.portfolioFilter a').click(function(){
-					$('.portfolioFilter .current').removeClass('current');
-					$(this).addClass('current');
-					var selector = $(this).attr('data-filter');
-					$container.isotope({
-						filter: selector,
-					});
-					return false;
-				});
-			});
-		</script>
-	</body>
+                                    <span class="part">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span>19 hours ago</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <a href="single-blog.html"><h4>don't just be a designer - be a good one</h4></a>
+                            <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...
+                            </p>
+                            <div class="button-o">
+                                <a href="single-blog.html">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- video section -->
+        <section id="video">
+            <div class="container">
+                <h2 class="section-header">nothing say better than a video</h2>
+                <div class="play">
+                    <a id="play-button"><img src="images/play-button.png" alt="play"></a>
+                    <p>watch now</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- video to play -->
+        <div id="video-playing">
+            <div id="exit-con">
+                <i class="fa fa-times" id="exit-video" aria-hidden="true"></i>
+            </div>
+            <iframe id="vid" src="https://www.youtube.com/embed/nrJtHemSPW4?version=3&enablejsapi=1" allowfullscreen>
+            </iframe>
+            
+        </div>
+        <!-- pricing section -->
+        <section id="pricing">
+            <div class="container">
+                <h2 class="section-header">pricing plans</h2>
+                <!-- plan 1 -->
+                <div class="plan-o col-md-4">
+                    <div class="plan">
+                        <h3>basic</h3>
+                        <p class="price"><span>$</span>40</p>
+                        <p class="property true">faster approval</p>
+                        <p class="property true">mail support</p>
+                        <p class="property true">instant services</p>
+                        <p class="property">credit options</p>
+                        <p class="property">admin access</p>
+                        <p class="property">advanced features</p>
+                        <p class="property">24/7 support</p>
+                        <button>sign up now</button>
+                    </div>
+                </div>
+                
+                <!-- plan 2 -->
+                <div class="plan-o col-md-4">
+                    <div class="plan">
+                        <h3>pro</h3>
+                        <p class="price"><span>$</span>90</p>
+                        <p class="property true">faster approval</p>
+                        <p class="property true">mail support</p>
+                        <p class="property true">instant services</p>
+                        <p class="property true">credit options</p>
+                        <p class="property true">admin access</p>
+                        <p class="property true">advanced features</p>
+                        <p class="property true">24/7 support</p>
+                        <button>sign up now</button>
+                    </div>
+                </div>
+                
+                <!-- plan 3 -->
+                <div class="plan-o col-md-4">
+                    <div class="plan">
+                        <h3>premium</h3>
+                        <p class="price"><span>$</span>40</p>
+                        <p class="property true">faster approval</p>
+                        <p class="property true">mail support</p>
+                        <p class="property true">instant services</p>
+                        <p class="property true">credit options</p>
+                        <p class="property true">admin access</p>
+                        <p class="property ">advanced features</p>
+                        <p class="property ">24/7 support</p>
+                        <button>sign up now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- what our clients said section -->
+        <section id="testimonials">
+            <div class="container">
+                <h2 class="section-header">what our clients said</h2>
+                <div class="owl-carousel owl-theme" id="comments">
+                    <!-- comment 1 -->
+                    <div class="comment">
+                        <img src="images/5stars.png" alt="rate">
+                        <p class="rate">our client rating 5/5</p>
+                        <p class="c-text"><span>"</span> creative and professional designer i advice all who want a creative products to deal with this amazing man, he will do more than you want <span>"</span></p>
+                        <p class="name">jhon doe - usa</p>
+                    </div>
+                    <!-- comment 2 -->
+                    <div class="comment">
+                        <img src="images/5stars.png" alt="rate">
+                        <p class="rate">our client rating 5/5</p>
+                        <p class="c-text"><span>"</span> creative and professional designer i advice all who want a creative products to deal with this amazing man, he will do more than you want <span>"</span></p>
+                        <p class="name">jhon doe - usa</p>
+                    </div>
+                    <!-- comment 3 -->
+                    <div class="comment">
+                        <img src="images/5stars.png" alt="rate">
+                        <p class="rate">our client rating 5/5</p>
+                        <p class="c-text"><span>"</span> creative and professional designer i advice all who want a creative products to deal with this amazing man, he will do more than you want <span>"</span></p>
+                        <p class="name">jhon doe - usa</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- partners section -->
+        <section id="partners">
+            <div class="container">
+                <div class="owl-carousel owl-theme" id="partners-slider">
+                    <div class="partner">
+                        <img src="http://placehold.it/200x50" alt="">
+                    </div>
+                    <div class="partner">
+                        <img src="http://placehold.it/200x50" alt="">
+                    </div>
+                    <div class="partner">
+                        <img src="http://placehold.it/200x50" alt="">
+                    </div>
+                    <div class="partner">
+                        <img src="http://placehold.it/200x50" alt="">
+                    </div>
+                    <div class="partner">
+                        <img src="http://placehold.it/200x50" alt="">
+                    </div>
+                    <div class="partner">
+                        <img src="http://placehold.it/200x50" alt="">
+                    </div>
+                    <div class="partner">
+                        <img src="http://placehold.it/200x50" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- contact section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-header">get in touch</h2>
+                <div class="col-md-6 left">
+                    <form>
+                        <input type="text" placeholder="Name*" required>
+                        <input type="email" placeholder="Email*" required>
+                        <textarea placeholder="Message*" required></textarea>
+                        <input type="submit" value="send message">
+                    </form>
+                </div>
+                
+                <div class="col-md-6 right">
+                    <div id="map-o"><div id="map"></div></div>
+                </div>
+                
+                <div id="info" class="col-md-12">
+                    <div class="part-o col-md-3">
+                        <div class="part">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <p>+ 999 999 99</p>
+                        </div>
+                    </div>
+                    
+                    <div class="part-o col-md-3">
+                        <div class="part">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <p>name@mywebsite.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="part-o col-md-3">
+                        <div class="part">
+                            <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                            <p>29 m.qodus street, shoubra, egypt</p>
+                        </div>
+                    </div>
+                    
+                    <div class="part-o col-md-3">
+                        <div class="part">
+                            <h4>follow me</h4>
+                            <div class="social-media">
+                                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- go to top button -->
+        <i class="fa fa-arrow-up" aria-hidden="true" id="to-top"></i>
+        
+        <!-- footer -->
+        <div id="footer">
+            <div class="container">
+                <p>copyrights &copy; vamous 2017</p>
+            </div>
+        </div>
+        <!-- scripts -->
+        <!-- google map scripts -->
+        <!-- map function script file -->
+        <script src="js/map.js"></script>
+        <!-- Replace the value of the key parameter with your own API key. -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtF3fzhHz_-dI4YBTJNUfBh4RueZU5ILs&callback=initMap" async defer></script>
+        <!-- jquery -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <!-- bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- MixItUp library script -->
+        <script src="js/jquery.mixitup.js"></script>
+        <!-- Magnific Popup library Script -->
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <!-- owl carousel script -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- count to plugin -->
+        <script src="js/jquery.countTo.js"></script>
+        <!-- typed.js plugin -->
+        <script src="js/typed.min.js"></script>
+        <!-- parallax script file -->
+        <script src="js/parallax.min.js"></script>
+        <!-- custom script file -->
+        <script src="js/custom.js"></script>
+    </body>
 </html>
