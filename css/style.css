@@ -968,7 +968,7 @@ section{
 
 /* sponsor-us us section styling */
 #sponsor-us{
-    background-image:url("../images/bg4.jpg");
+    background-image:url("../images/team/team.jpg");
     background-size:cover;
     background-position: center;
     position: relative;
@@ -976,7 +976,6 @@ section{
     font-size: 0;
     text-align: center;
 }
-
 #sponsor-us:after{
     content:"";
     position: absolute;
@@ -2362,59 +2361,4 @@ section{
     .s-right .search input{
         width:100%;
     }
-}
-
-
-
-.sponsor-logos{
-  padding-bottom: 75px;
-  text-align: center;
-}
-
-.sponsor-logos a, .hvr-grow{
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-
-.sponsor-logos a:hover, .sponsor-logos a:focus, .sponsor-logos a:active, .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.sponsor-logos a img {
-    vertical-align: middle;
-}
-
-.sponsor-logos .platinum a img {
-    max-height: 300px;
-    max-width: 300px;
-    margin: 1.5em;
-}
-
-.sponsor-logos .gold a img {
-    max-height: 250px;
-    max-width: 250px;
-    margin: 1.5em;
-}
-.sponsor-logos .silver a img {
-    max-height: 200px;
-    max-width: 200px;
-    margin: 1.5em;
-}
-.sponsor-logos .bronze a img {
-    max-height: 150px;
-    max-width: 150px;
-    margin: 1.5em;
-}
-.sponsor-logos .other a img {
-    max-height: 100px;
-    max-width: 100px;
-    margin: 1.5em;
 }
