@@ -290,7 +290,7 @@ section{
     height:75px;
     overflow: hidden;
     font-size: 0;
-    
+
 }
 #main-nav ul li{
     display: inline-block;
@@ -405,7 +405,7 @@ section{
     color:#fdd835;
     text-transform: capitalize;
     font-size:90px;
-    
+
 }
 #home-header h1 #name{
     color:#fff;
@@ -531,14 +531,14 @@ section{
 
 #about .about-left{
     padding-right:80px;
-    
+
 }
 #about .about-left .card{
     text-align: center;
     background-color:#191919;
     padding:30px 20px;
     position: relative;
-    
+
 }
 #about .about-left .card:before{
     content:"";
@@ -1133,7 +1133,7 @@ section{
     overflow: hidden;
     position: relative;
 }
-#blogs .blog-o .blog .image img{    
+#blogs .blog-o .blog .image img{
     width: 100%;
     min-height: 100%;
     transition:all .5s ease-in-out;
@@ -1347,7 +1347,7 @@ section{
     background-color:#191919;
     text-align: center;
     padding:20px;
-    
+
 }
 
 #pricing .plan-o .plan h3{
@@ -1355,7 +1355,7 @@ section{
     margin:0;
     margin-bottom:15px;
     color:#fff;
-    
+
 }
 #pricing .plan-o .plan .price{
     font-family:monteserrat-medium;
@@ -2164,7 +2164,7 @@ section{
 .s-right .cat-list h3,.s-right .recent-posts h3,.s-right .keyword h3{
     color:#313131;
     text-transform: capitalize;
-    
+
 }
 .s-right .cat-list ul,.s-right .recent-posts ul,.s-right .keyword ul{
     list-style: none;
@@ -2308,4 +2308,58 @@ section{
     .s-right .search input{
         width:100%;
     }
+}
+
+
+.sponsor-logos{
+  padding-bottom: 75px;
+  text-align: center;
+}
+
+.sponsor-logos a, .hvr-grow{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.sponsor-logos a:hover, .sponsor-logos a:focus, .sponsor-logos a:active, .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.sponsor-logos a img {
+    vertical-align: middle;
+}
+
+.sponsor-logos .platinum a img {
+    max-height: 300px;
+    max-width: 300px;
+    margin: 1.5em;
+}
+
+.sponsor-logos .gold a img {
+    max-height: 250px;
+    max-width: 250px;
+    margin: 1.5em;
+}
+.sponsor-logos .silver a img {
+    max-height: 200px;
+    max-width: 200px;
+    margin: 1.5em;
+}
+.sponsor-logos .bronze a img {
+    max-height: 150px;
+    max-width: 150px;
+    margin: 1.5em;
+}
+.sponsor-logos .other a img {
+    max-height: 100px;
+    max-width: 100px;
+    margin: 1.5em;
 }
