@@ -914,7 +914,7 @@ section{
     letter-spacing: .5px;
 }
 
-/* work wz me section styling */
+/* work w us section styling */
 #work-w-us{
     background-image:url("../images/team/team.jpg");
     background-size:cover;
@@ -965,6 +965,59 @@ section{
     border:2px solid #fdd835;
     color:#fff;
 }
+
+/* sponsor-us us section styling */
+#sponsor-us{
+    background-image:url("../images/team/team.jpg");
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+    font-size: 0;
+    text-align: center;
+}
+#sponsor-us:after{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#151515;
+    opacity:.25;
+    z-index: 1;
+}
+#sponsor-us .section-header{
+    color:#fff;
+    position: relative;
+    z-index: 2;
+    letter-spacing: 2px;
+    margin-bottom:30px;
+}
+#sponsor-us button{
+    font-size: 17px;
+    position: relative;
+    z-index: 2;
+    color:#fff;
+    background-color:#fdd835;
+    border:2px solid #fdd835;
+    padding:8px 15px;
+    outline:0;
+    color:#313131;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+}
+#sponsor-us button:hover{
+    background-color:transparent;
+    border:2px solid #fdd835;
+    color:#fff;
+}
+
 
 /* team members */
 #team{
