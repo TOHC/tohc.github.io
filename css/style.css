@@ -401,12 +401,11 @@ section{
     position: relative;
     z-index: 2;
 }
-#home-header h1 #hi{
+/*#home-header h1 #hi{
     color:#fdd835;
     text-transform: capitalize;
     font-size:90px;
-
-}
+}*/
 #home-header h1 #name{
     color:#fff;
     text-transform: uppercase;

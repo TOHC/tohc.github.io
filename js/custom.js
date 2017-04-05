@@ -8,7 +8,7 @@ win.on("load", function () {
 
     $("#preloader").fadeOut(800, function () {
         $("#name").typed({
-            strings: ["i'm jhon doe"],
+            strings: ["toronto hacker club"],
             typeSpeed: 50,
             showCursor: false,
             callback: function () {

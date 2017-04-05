@@ -1,3 +1,4 @@
 .htaccess
 *.php
 node_modules/
+*.swp
