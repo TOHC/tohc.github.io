@@ -76,11 +76,11 @@ doc.ready(function () {
 		}, 600);
     });
 
-    navLink3.on("click", function () {
+    /*navLink3.on("click", function () {
         htmlBody.animate({
 			scrollTop: services.offset().top - 65
 		}, 600);
-    });
+    });*/
 
     navLink4.on("click", function () {
         htmlBody.animate({
@@ -94,11 +94,11 @@ doc.ready(function () {
 		}, 600);
     });
 
-    navLink6.on("click", function () {
+    /*navLink6.on("click", function () {
         htmlBody.animate({
 			scrollTop: blogs.offset().top - 65
 		}, 600);
-    });
+    });*/
 
     navLink7.on("click", function () {
         htmlBody.animate({
@@ -202,9 +202,9 @@ doc.ready(function () {
             navLink2.addClass("active").siblings().removeClass("active");
         }
 
-        if (win.scrollTop() >= services.offset().top - 66) {
+        /*if (win.scrollTop() >= services.offset().top - 66) {
             navLink3.addClass("active").siblings().removeClass("active");
-        }
+        }*/
 
         if (win.scrollTop() >= portfolio.offset().top - 66) {
             navLink4.addClass("active").siblings().removeClass("active");
@@ -214,9 +214,9 @@ doc.ready(function () {
             navLink5.addClass("active").siblings().removeClass("active");
         }
 
-        if (win.scrollTop() >= blogs.offset().top - 66) {
+        /*if (win.scrollTop() >= blogs.offset().top - 66) {
             navLink6.addClass("active").siblings().removeClass("active");
-        }
+        }*/
 
         if (win.scrollTop() >= pricing.offset().top - 66) {
             navLink7.addClass("active").siblings().removeClass("active");
@@ -227,7 +227,7 @@ doc.ready(function () {
         }
 
         // skills section animation
-        if (win.scrollTop() >= $("#skills").offset().top - 250 && flag1 === 0) {
+        /*if (win.scrollTop() >= $("#skills").offset().top - 250 && flag1 === 0) {
             $("#s-html").stop(700).animate({
                 width: '95%'
             }, 700);
@@ -246,7 +246,7 @@ doc.ready(function () {
             $("#s-marketing").stop(700).animate({
                 width: '80%'
             }, 700);
-        }
+        }*/
 
         // statistics section counting
         if (win.scrollTop() >= $("#statistics").offset().top - 200 && flag2 === 0) {
@@ -373,7 +373,7 @@ doc.ready(function () {
 	});
 
     // trigger owl coursel slider for blogs section
-	$("#blogs-slider").owlCarousel({
+	/*$("#blogs-slider").owlCarousel({
 		slideSpeed : 300,
 		paginationSpeed : 400,
 		items: 3,
@@ -399,7 +399,7 @@ doc.ready(function () {
         loop: true,
         autoplay: true,
 		autoplayTimeout : 3500
-	});
+	});*/
 
     // trigger owl coursel slider for partners
 	$("#partners-slider").owlCarousel({
