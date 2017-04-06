@@ -2362,3 +2362,28 @@ section{
     max-width: 100px;
     margin: 1.5em;
 }
+
+.button{
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    color:#fff;
+    background-color:#0065a4;
+    border:2px solid #0065a4;
+    padding:8px 15px;
+    outline:0;
+    color:white;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+}
+.button:hover{
+    background-color:transparent;
+    border:2px solid #0065a4;
+    color:black;
+}
