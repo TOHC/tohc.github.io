@@ -401,11 +401,6 @@ section{
     position: relative;
     z-index: 2;
 }
-/*#home-header h1 #hi{
-    color:#0065a4;
-    text-transform: capitalize;
-    font-size:90px;
-}*/
 #home-header h1 #name{
     color:#fff;
     text-transform: uppercase;
@@ -1002,13 +997,6 @@ section{
     font-size: 17px;
     margin-top:10px;
     margin-bottom: 4px;
-}
-#team .member-o .member .info .job{
-    text-align: center;
-    text-transform: capitalize;
-    color:#ccc;
-    word-spacing: 2px;
-    font-size: 17px;
 }
 #team .member-o .member .info .social-media{
     text-align: center;
