@@ -30,11 +30,9 @@ doc.ready(function () {
 		flag2 = 0,
 		htmlBody = $("html, body"),
 		about = $("#about"),
-		services = $("#services"),
-		portfolio = $("#portfolio"),
+		events = $("#events"),
 		team = $("#team"),
-		blogs = $("#blogs"),
-		pricing = $("#pricing"),
+		sponsors = $("#sponsors"),
 		contact = $("#contact"),
 		mainNav = $("#main-nav"),
 		navLogo = $("#nav-logo"),
@@ -47,13 +45,11 @@ doc.ready(function () {
 		navLink4 = $("#main-nav ul li:nth-of-type(4)"),
 		navLink5 = $("#main-nav ul li:nth-of-type(5)"),
 		navLink6 = $("#main-nav ul li:nth-of-type(6)"),
-		navLink7 = $("#main-nav ul li:nth-of-type(7)"),
-		navLink8 = $("#main-nav ul li:nth-of-type(8)"),
 		bars = $("#bars"),
 		toTopButton = $("#to-top");
 
 	// trigger mixitup library
-	$("#portfolio").mixItUp({
+	$("#events").mixItUp({
 		activeClass: 'on'
 	});
 	// nav bar links on click
@@ -69,41 +65,30 @@ doc.ready(function () {
 		}, 600);
 	});
 
-	/*navLink3.on("click", function () {
+	navLink3.on("click", function () {
 		htmlBody.animate({
-			scrollTop: services.offset().top - 65
-		}, 600);
-	});*/
-
-	navLink4.on("click", function () {
-		htmlBody.animate({
-			scrollTop: portfolio.offset().top - 65
+			scrollTop: events.offset().top - 65
 		}, 600);
 	});
 
-	navLink5.on("click", function () {
+	navLink4.on("click", function () {
 		htmlBody.animate({
 			scrollTop: team.offset().top - 65
 		}, 600);
 	});
 
-	/*navLink6.on("click", function () {
+	navLink5.on("click", function () {
 		htmlBody.animate({
-			scrollTop: blogs.offset().top - 65
-		}, 600);
-	});*/
-
-	navLink7.on("click", function () {
-		htmlBody.animate({
-			scrollTop: pricing.offset().top - 64
+			scrollTop: sponsors.offset().top - 65
 		}, 600);
 	});
 
-	navLink8.on("click", function () {
+	navLink6.on("click", function () {
 		htmlBody.animate({
-			scrollTop: contact.offset().top - 64
+			scrollTop: contact.offset().top - 65
 		}, 600);
 	});
+
 	// down icon on click
 	$("#down-icon").on("click", function () {
 		htmlBody.animate({
@@ -195,51 +180,21 @@ doc.ready(function () {
 			navLink2.addClass("active").siblings().removeClass("active");
 		}
 
-		/*if (win.scrollTop() >= services.offset().top - 66) {
+		if (win.scrollTop() >= events.offset().top - 66) {
 			navLink3.addClass("active").siblings().removeClass("active");
-		}*/
-
-		if (win.scrollTop() >= portfolio.offset().top - 66) {
-			navLink4.addClass("active").siblings().removeClass("active");
 		}
 
 		if (win.scrollTop() >= team.offset().top - 66) {
+			navLink4.addClass("active").siblings().removeClass("active");
+		}
+
+		if (win.scrollTop() >= sponsors.offset().top - 66) {
 			navLink5.addClass("active").siblings().removeClass("active");
 		}
 
-		/*if (win.scrollTop() >= blogs.offset().top - 66) {
-			navLink6.addClass("active").siblings().removeClass("active");
-		}*/
-
-		if (win.scrollTop() >= pricing.offset().top - 66) {
-			navLink7.addClass("active").siblings().removeClass("active");
-		}
-
 		if (win.scrollTop() >= contact.offset().top - 66) {
-			navLink8.addClass("active").siblings().removeClass("active");
+			navLink6.addClass("active").siblings().removeClass("active");
 		}
-
-		// skills section animation
-		/*if (win.scrollTop() >= $("#skills").offset().top - 250 && flag1 === 0) {
-			$("#s-html").stop(700).animate({
-				width: '95%'
-			}, 700);
-			$("#s-javascript").stop(700).animate({
-				width: '80%'
-			}, 700);
-			$("#s-jquery").stop(700).animate({
-				width: '85%'
-			}, 700);
-			$("#s-bootstrap").stop(700).animate({
-				width: '75%'
-			}, 700);
-			$("#s-photoshop").stop(700).animate({
-				width: '95%'
-			}, 700);
-			$("#s-marketing").stop(700).animate({
-				width: '80%'
-			}, 700);
-		}*/
 
 		// statistics section counting
 		if (win.scrollTop() >= $("#statistics").offset().top - 200 && flag2 === 0) {
@@ -364,35 +319,6 @@ doc.ready(function () {
 			}
 		}
 	});
-
-	// trigger owl coursel slider for blogs section
-	/*$("#blogs-slider").owlCarousel({
-		slideSpeed : 300,
-		paginationSpeed : 400,
-		items: 3,
-		responsiveClass: true,
-		responsive: {
-			0: {
-				items: 1
-			},
-			690: {
-				items: 2
-			},
-			992: {
-				items: 3
-			}
-		}
-	});
-
-	// trigger owl coursel slider for testimonials
-	$("#comments").owlCarousel({
-		slideSpeed : 300,
-		paginationSpeed : 400,
-		items: 1,
-		loop: true,
-		autoplay: true,
-		autoplayTimeout : 3500
-	});*/
 
 	// trigger owl coursel slider for partners
 	$("#partners-slider").owlCarousel({

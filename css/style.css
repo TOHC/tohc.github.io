@@ -710,15 +710,15 @@ section{
 }
 
 /* portfolio section */
-#portfolio{
+#events{
     overflow: hidden;
 }
-#portfolio .buttons{
+#events .buttons{
     text-align: center;
     margin-bottom:30px;
 }
 
-#portfolio .buttons button{
+#events .buttons button{
     text-transform: uppercase;
     margin:0 5px;
     padding:0 10px 3px 10px;
@@ -734,23 +734,23 @@ section{
     font-size: 15.5px;
     color:#313131;
 }
-#portfolio .buttons button.active,#portfolio .buttons button:hover{
+#events .buttons button.active,#events .buttons button:hover{
     border-bottom:2px solid #313131;
 }
 #items-container{
     overflow: hidden;
 }
-#portfolio .item-o{
+#events .item-o{
     padding:20px;
 }
-#portfolio .item-o .item{
+#events .item-o .item{
     text-align: center;
     position: relative;
     height:240px;
     overflow: hidden;
     width: 100%;
 }
-#portfolio .item-o .item img{
+#events .item-o .item img{
     min-height: 240px;
     max-width: 350px;
     min-width: 100%;
@@ -760,7 +760,7 @@ section{
     -o-transition:all .3s ease-in-out;
     -ms-transition:all .3s ease-in-out;
 }
-#portfolio .item-o .item .over{
+#events .item-o .item .over{
     position: absolute;
     top:10px;
     bottom:10px;
@@ -774,7 +774,7 @@ section{
     -o-transition:all .3s ease-in-out;
     -ms-transition:all .3s ease-in-out;
 }
-#portfolio .item-o .item .over h4{
+#events .item-o .item .over h4{
     position: absolute;
     bottom:30px;
     left:-70px;
@@ -787,7 +787,7 @@ section{
     -o-transition:all .7s ease-in-out;
     -ms-transition:all .7s ease-in-out;
 }
-#portfolio .item-o .item .over .category{
+#events .item-o .item .over .category{
     position: absolute;
     bottom:5px;
     left:90px;
@@ -800,7 +800,7 @@ section{
     -o-transition:all .7s ease-in-out;
     -ms-transition:all .7s ease-in-out;
 }
-#portfolio .item-o .item .over .open-icon{
+#events .item-o .item .over .open-icon{
     position: absolute;
     left:0;
     right:0;
@@ -820,33 +820,33 @@ section{
     color:#3a3a3a;
     opacity:0;
 }
-#portfolio .item-o .item .over .open-icon i{
+#events .item-o .item .over .open-icon i{
     font-size: 20px;
 }
-#portfolio .item-o .item .over .open-icon:hover{
+#events .item-o .item .over .open-icon:hover{
     background-color:transparent;
     border:1px solid #fff;
     color:#0065a4;
 }
 
-#portfolio .item-o .item:hover img{
+#events .item-o .item:hover img{
     transform:scale(1.15,1.15);
     -webkit-transform:scale(1.15,1.15);
     -moz-transform:scale(1.15,1.15);
     -o-transform:scale(1.15,1.15);
     -ms-transform:scale(1.15,1.15);
 }
-#portfolio .item-o .item:hover .over{
+#events .item-o .item:hover .over{
     opacity:1;
 }
-#portfolio .item-o .item:hover .over .open-icon{
+#events .item-o .item:hover .over .open-icon{
     opacity: 1;
 }
-#portfolio .item-o .item:hover .over h4,#portfolio .item-o .item:hover .over .category{
+#events .item-o .item:hover .over h4,#events .item-o .item:hover .over .category{
     left:20px;
     opacity:1;
 }
-#portfolio .mix{
+#events .mix{
     display: none;
 }
 
