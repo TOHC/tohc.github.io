@@ -960,6 +960,59 @@ section{
     color:#fff;
 }
 
+
+/* work with us section styling */
+#sponsor-us{
+    background-image:url("../images/bg2.jpg");
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+    font-size: 0;
+    text-align: center;
+}
+#sponsor-us:after{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#151515;
+    opacity:.55;
+    z-index: 1;
+}
+#sponsor-us .section-header{
+    color:#fff;
+    position: relative;
+    z-index: 2;
+    letter-spacing: 2px;
+    margin-bottom:30px;
+}
+#sponsor-us button{
+    font-size: 17px;
+    position: relative;
+    z-index: 2;
+    color:#fff;
+    background-color:#0065a4;
+    border:2px solid #0065a4;
+    padding:8px 15px;
+    outline:0;
+    color:#fff;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+}
+#sponsor-us button:hover{
+    background-color:transparent;
+    border:2px solid #0065a4;
+    color:#fff;
+}
+
 /* team members */
 #team{
     position: relative;
