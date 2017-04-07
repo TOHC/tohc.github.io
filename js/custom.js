@@ -115,12 +115,6 @@ doc.ready(function () {
 		navList.slideToggle(500);
 	});
 
-	// work with me button on click
-	$("#work-wz-me").on("click", function () {
-		htmlBody.animate({
-			scrollTop: contact.offset().top - 64
-		}, 800);
-	});
 
 	// to top button on click
 	toTopButton.on("click", function () {

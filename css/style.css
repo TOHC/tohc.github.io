@@ -908,8 +908,8 @@ section{
     letter-spacing: .5px;
 }
 
-/* work wz me section styling */
-#work-w-me{
+/* work with us section styling */
+#work-w-us{
     background-image:url("../images/team/team.jpg");
     background-size:cover;
     background-position: center;
@@ -918,7 +918,7 @@ section{
     font-size: 0;
     text-align: center;
 }
-#work-w-me:after{
+#work-w-us:after{
     content:"";
     position: absolute;
     top:0;
@@ -926,17 +926,17 @@ section{
     right:0;
     bottom:0;
     background-color:#151515;
-    opacity:.35;
+    opacity:.25;
     z-index: 1;
 }
-#work-w-me .section-header{
+#work-w-us .section-header{
     color:#fff;
     position: relative;
     z-index: 2;
     letter-spacing: 2px;
     margin-bottom:30px;
 }
-#work-w-me button{
+#work-w-us button{
     font-size: 17px;
     position: relative;
     z-index: 2;
@@ -945,7 +945,7 @@ section{
     border:2px solid #0065a4;
     padding:8px 15px;
     outline:0;
-    color:#313131;
+    color:#fff;
     text-transform: uppercase;
     word-spacing: 5px;
     transition: all .5s ease-in-out;
@@ -954,7 +954,7 @@ section{
     -o-transition: all .5s ease-in-out;
     -ms-transition: all .5s ease-in-out;
 }
-#work-w-me button:hover{
+#work-w-us button:hover{
     background-color:transparent;
     border:2px solid #0065a4;
     color:#fff;
