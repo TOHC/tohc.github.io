@@ -910,7 +910,7 @@ section{
 
 /* work wz me section styling */
 #work-w-me{
-    background-image:url("http://placehold.it/1500x780");
+    background-image:url("../images/team/team.jpg");
     background-size:cover;
     background-position: center;
     position: relative;
@@ -926,7 +926,7 @@ section{
     right:0;
     bottom:0;
     background-color:#151515;
-    opacity:.95;
+    opacity:.35;
     z-index: 1;
 }
 #work-w-me .section-header{
