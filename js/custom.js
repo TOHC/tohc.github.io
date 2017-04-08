@@ -186,7 +186,7 @@ doc.ready(function () {
 			navLink5.addClass("active").siblings().removeClass("active");
 		}
 
-		if (win.scrollTop() >= contact.offset().top - 66) {
+		if (win.scrollTop() >= $("#sponsor-us").offset().top) {
 			navLink6.addClass("active").siblings().removeClass("active");
 		}
 
