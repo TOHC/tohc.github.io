@@ -669,7 +669,7 @@ section{
 
 /* statistics section styling */
 #statistics{
-	background-image:url("http://placehold.it/1500x820");
+	background-image:url("../images/bg0.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -683,7 +683,7 @@ section{
 	left:0;
 	right:0;
 	background-color:#151515;
-	opacity:.95;
+	opacity:.9;
 	z-index: 1;
 }
 #statistics .part{
@@ -926,7 +926,7 @@ section{
 	right:0;
 	bottom:0;
 	background-color:#151515;
-	opacity:.25;
+	opacity:.9;
 	z-index: 1;
 }
 #work-w-us .section-header{
@@ -1097,10 +1097,11 @@ section{
 
 /* subscribe section styling */
 #subscribe{
-	background-image:url("http://placehold.it/1600x770");
+	background-image:url("../images/bg2.jpg");
 	background-size:cover;
 	background-position: center;
 	position: relative;
+	background-attachment: fixed;
 }
 #subscribe:after{
 	content:"";
