@@ -1562,24 +1562,13 @@ section{
 
 /* contact section */
 #contact{
-	background-image:url("http://placehold.it/1600x722");
+	background-color:#151515;
 	background-size: cover;
 	position: relative;
 	background-position: center;
 }
-#contact:after{
-	content:"";
-	position: absolute;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	background-color:#151515;
-	opacity:.98;
-	z-index: 1;
-}
 #contact .section-header{
-	color:#fff;
+	color:#f4f4f4;
 	position: relative;
 	z-index: 2;
 }
@@ -1637,7 +1626,7 @@ section{
 	-o-transition: all .5s ease-in-out;
 	-ms-transition: all .5s ease-in-out;
 	background-color:#0065a4;
-	color:#313131;
+	color:/*#313131*/#f4f4f4;
 	outline:0;
 	font-size: 15px;
 	text-transform: uppercase;
