@@ -617,6 +617,12 @@ section{
 	font-size: 1.25em;
 	line-height: 2em;
 }
+@media(max-width:425px){
+	#about .about-right p{
+		font-size: 1em;
+		line-height: 1.75em;
+	}
+}
 
 /* services section styling */
 #services{
