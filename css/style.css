@@ -1051,6 +1051,13 @@ section{
 	margin-top:10px;
 	margin-bottom: 4px;
 }
+#team .member-o .member .info .job{
+	text-align: center;
+	text-transform: capitalize;
+	color:#ccc;
+	word-spacing: 2px;
+	font-size: 17px;
+}
 #team .member-o .member .info .social-media{
 	text-align: center;
 }
