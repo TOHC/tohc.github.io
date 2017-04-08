@@ -1695,6 +1695,7 @@ section{
 	-o-transition: all .5s ease-in-out;
 	-ms-transition: all .5s ease-in-out;
 }
+
 #contact #info .part .social-media i:hover{
 	color:#0065a4;
 }
@@ -2045,7 +2046,7 @@ section{
 }
 @media(max-width:377px){
 	#contact #info .part{
-		margin-bottom: 10px;
+		margin-bottom: 30px;
 		font-size: 14px;
 	}
 	#contact #info .part-o{
