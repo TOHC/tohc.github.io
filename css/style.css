@@ -57,11 +57,39 @@ body{
 	background-color:#f4f4f4;
 	/* prevent text selecting
 	-webkit-touch-callout: none;  iOS Safari
-	-webkit-user-select: none;  Safari
-	 -khtml-user-select: none;  Konqueror HTML
-	   -moz-user-select: none;  Firefox
-		-ms-user-select: none;  Internet Explorer/Edge
-			user-select: none;  Non-prefixed version, currently*/
+	-webkit-user-select: none;	Safari
+	 -khtml-user-select: none;	Konqueror HTML
+	   -moz-user-select: none;	Firefox
+		-ms-user-select: none;	Internet Explorer/Edge
+			user-select: none;	Non-prefixed version, currently*/
+}
+
+::selection {
+	background-color: #0065a4;
+	color: #fff;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+	background-color: #0065a4;
+	color: #fff;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+	background-color: #0065a4;
+	color: #fff;
+}
+
+::-ms-selection {
+	background-color: #0065a4;
+	color: #fff;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+	background-color: #0065a4;
+	color: #fff;
 }
 
 h1,
