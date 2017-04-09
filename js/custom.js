@@ -191,7 +191,7 @@ doc.ready(function () {
 		}
 
 		// statistics section counting
-		if (win.scrollTop() >= $("#statistics").offset().top - 200 && flag2 === 0) {
+		/*if (win.scrollTop() >= $("#statistics").offset().top - 200 && flag2 === 0) {
 			$('#num-of-hackathons').countTo({
 				from: 0,
 				to: 4,
@@ -216,7 +216,7 @@ doc.ready(function () {
 				speed: 500
 			});
 			flag2 = 1;
-		}
+		}*/
 
 		// about section animations
 		if (win.scrollTop() >= about.offset().top - 200) {
