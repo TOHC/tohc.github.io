@@ -6,7 +6,7 @@ var win = $(window);
 // after all page is loaded
 win.on("load", function () {
     $("#preloader").fadeOut(800);
-    
+
 });
 
 // after document is ready functions
@@ -18,12 +18,12 @@ $(document).ready(function () {
         navLi = $("#main-nav ul li"),
         navlink = $("#main-nav ul li a"),
         bars = $("#bars");
-    
+
     // bars icon on click
     bars.on("click", function () {
         navList.slideToggle(500);
     });
-    
+
     // on scrolling functions
     win.on("scroll", function () {
         //navbar background change
@@ -65,7 +65,7 @@ $(document).ready(function () {
             });
         }
     });
-    
+
     // on resizing functions
     win.on("resize", function () {
         // navbar change
