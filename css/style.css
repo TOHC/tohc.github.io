@@ -300,6 +300,7 @@ section{
 	-moz-transition:all .3s linear;
 	-o-transition:all .3s linear;
 	-ms-transition:all .3s linear;
+	border-style:none;
 }
 #main-nav img{
 	height:40px; /* 35 */
