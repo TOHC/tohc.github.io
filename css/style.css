@@ -1193,6 +1193,7 @@ section{
 	border:2px solid #0065a4;
 	background-color:#0065a4;
 	text-transform: uppercase;
+  color:#fff;
 }
 #subscribe #sub input[type="submit"]:hover{
 	background-color:transparent;
@@ -2584,4 +2585,17 @@ section{
 li{
   font-family: monteserrat-light;
   list-style: none;
+}
+
+a{
+  color: #fff;
+}
+
+a:hover{
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  color: #0065A4;
 }
