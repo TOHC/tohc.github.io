@@ -2582,6 +2582,7 @@ section{
 	height:400px;
 	background-image:url("../images/hd1.jpg");
 	background-size:cover;
+	background-position: center;
 	position: relative;
 	display: -ms-flexbox;
 	display: -webkit-flex;
