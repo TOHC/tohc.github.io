@@ -496,7 +496,7 @@ section{
 	color:#fff;
 	position: relative;
 	z-index: 2;
-	margin:0 3px;
+	margin:0 8px;
 	width:37px;
 	height:37px;
 	line-height: 37px;
@@ -510,6 +510,7 @@ section{
 }
 #home-header .social-media i:hover{
 	border:2px solid #0065a4;
+	background-color:#0065a4;
 }
 #home-header .down{
 	position: absolute;
