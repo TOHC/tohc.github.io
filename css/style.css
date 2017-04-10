@@ -1617,7 +1617,7 @@ section{
 	position: relative;
 	z-index: 2;
 }
-#contact .left form input[type="text"],#contact .left form input[type="email"]{
+#contact .left form input[type="name"],#contact .left form input[type="email"]{
 	width:45%;
 	padding:12px;
 	background-color:transparent;
