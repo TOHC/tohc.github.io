@@ -721,7 +721,7 @@ section{
 	left:0;
 	right:0;
 	background-color:#151515;
-	opacity:.65;
+	opacity:.75;
 	z-index: 1;
 }
 #statistics .part{
@@ -964,7 +964,7 @@ section{
 	right:0;
 	bottom:0;
 	background-color:#151515;
-	opacity:.45;
+	opacity:.75;
 	z-index: 1;
 }
 #work-w-us .section-header{
@@ -1149,7 +1149,7 @@ section{
 	right:0;
 	bottom:0;
 	background-color:#151515;
-	opacity:.45;
+	opacity:.75;
 	z-index: 1;
 }
 #subscribe .section-header{
@@ -1716,7 +1716,9 @@ section{
 }
 #contact #info .part>i{
 	color:#0065a4;
-	font-size: 30px;
+	font-size: 24px;
+	margin-top: 10px;
+	margin-bottom: 5px;
 }
 #contact #info .part p{
 	margin-top:10px;
@@ -2421,22 +2423,22 @@ section{
 }
 
 .sponsor-logos .gold a img {
-	max-height: 250px;
+	max-height: 188px;
 	max-width: 250px;
 	margin: 1.5em;
 }
 .sponsor-logos .silver a img {
-	max-height: 200px;
+	max-height: 150px;
 	max-width: 200px;
 	margin: 1.5em;
 }
 .sponsor-logos .bronze a img {
-	max-height: 150px;
+	max-height: 113px;
 	max-width: 150px;
 	margin: 1.5em;
 }
 .sponsor-logos .other a img {
-	max-height: 100px;
+	max-height: 75px;
 	max-width: 100px;
 	margin: 1.5em;
 }
@@ -2451,19 +2453,19 @@ section{
 	}
 
 	.sponsor-logos .gold a img {
-		max-height: 175px;
+		max-height: 131px;
 		max-width: 175px;
 	}
 	.sponsor-logos .silver a img {
-		max-height: 150px;
+		max-height: 113px;
 		max-width: 150px;
 	}
 	.sponsor-logos .bronze a img {
-		max-height: 115px;
+		max-height: 86px;
 		max-width: 115px;
 	}
 	.sponsor-logos .other a img {
-		max-height: 75px;
+		max-height: 56px;
 		max-width: 75px;
 	}
 }
@@ -2476,22 +2478,22 @@ section{
 	}
 
 	.sponsor-logos .gold a img {
-		max-height: 125px;
+		max-height: 94px;
 		max-width: 125px;
 		margin: 1em;
 	}
 	.sponsor-logos .silver a img {
-		max-height: 100px;
+		max-height: 75px;
 		max-width: 100px;
 		margin: 1em;
 	}
 	.sponsor-logos .bronze a img {
-		max-height: 75px;
+		max-height: 56px;
 		max-width: 75px;
 		margin: 1em;
 	}
 	.sponsor-logos .other a img {
-		max-height: 50px;
+		max-height: 38px;
 		max-width: 50px;
 		margin: 1em;
 	}
@@ -2505,22 +2507,22 @@ section{
 	}
 
 	.sponsor-logos .gold a img {
-		max-height: 100px;
+		max-height: 75px;
 		max-width: 100px;
 		margin: 0.75em;
 	}
 	.sponsor-logos .silver a img {
-		max-height: 85px;
+		max-height: 64px;
 		max-width: 85px;
 		margin: 0.75em;
 	}
 	.sponsor-logos .bronze a img {
-		max-height: 70px;
+		max-height: 53px;
 		max-width: 70px;
 		margin: 0.75em;
 	}
 	.sponsor-logos .other a img {
-		max-height: 50px;
+		max-height: 38px;
 		max-width: 50px;
 		margin: 0.75em;
 	}
