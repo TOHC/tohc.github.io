@@ -6,7 +6,7 @@ var win = $(window),
 // after all page is loaded
 win.on("load", function () {
 
-	$("#preloader").fadeOut(800, function () {
+
 		$("#name").typed({
 			strings: ["toronto hacker club"],
 			typeSpeed: 50,
@@ -21,7 +21,6 @@ win.on("load", function () {
 			}
 		});
 
-	});
 
 });
 // after document is ready
