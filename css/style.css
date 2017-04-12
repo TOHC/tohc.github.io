@@ -2444,7 +2444,7 @@ section{
 
 .sponsor-logos .platinum a img {
 	max-height: 300px;
-	max-width: 300px;
+	max-width: 400px;
 	margin: 1.5em;
 }
 
@@ -2475,7 +2475,7 @@ section{
 	}
 	.sponsor-logos .platinum a img {
 		max-height: 225px;
-		max-width: 225px;
+		max-width: 300px;
 	}
 
 	.sponsor-logos .gold a img {
@@ -2499,7 +2499,7 @@ section{
 @media(max-width:475px) {
 	.sponsor-logos .platinum a img {
 		max-height: 175px;
-		max-width: 175px;
+		max-width: 233px;
 		margin: 1em;
 	}
 
@@ -2528,7 +2528,7 @@ section{
 @media(max-width:475px) {
 	.sponsor-logos .platinum a img {
 		max-height: 125px;
-		max-width: 125px;
+		max-width: 167px;
 		margin: 0.75em;
 	}
 
