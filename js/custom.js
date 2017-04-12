@@ -341,26 +341,7 @@ doc.ready(function () {
 		}
 	});
 
-	// play video
-	$("#play-button").on("click", function () {
-		$("#video-playing").fadeIn(500);
-	});
 
-	// exit video
-	$("#exit-video").on("click", function () {
-		$("#video-playing").fadeOut(500);
-		// stop video when exit
-		$('#vid')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-	});
-
-	//exit video using esc
-	doc.keyup(function (e) {
-		if (e.keyCode === 27) {
-			$("#video-playing").fadeOut(500);
-			// stop video when exit
-			$('#vid')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-		}
-	});
 
 	//trigger parallax
 	$('.parallax-window').parallax({
