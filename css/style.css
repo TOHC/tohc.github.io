@@ -2445,54 +2445,59 @@ section{
 .sponsor-logos .platinum a img {
 	max-height: 300px;
 	max-width: 400px;
-	margin: 1.5em;
+	margin: 1.75em;
 }
 
 .sponsor-logos .gold a img {
 	max-height: 188px;
 	max-width: 250px;
-	margin: 1.5em;
+	margin: 1.75em;
 }
 .sponsor-logos .silver a img {
 	max-height: 150px;
 	max-width: 200px;
-	margin: 1.5em;
+	margin: 1.75em;
 }
 .sponsor-logos .bronze a img {
 	max-height: 113px;
 	max-width: 150px;
-	margin: 1.5em;
+	margin: 1.75em;
 }
 .sponsor-logos .other a img {
 	max-height: 75px;
 	max-width: 100px;
-	margin: 1.5em;
+	margin: 1.75em;
 }
 
 @media(max-width:768px) {
 	#sponsors .section-header {
-		margin-bottom: 0.5em;
+		margin-bottom: 1.5em;
 	}
 	.sponsor-logos .platinum a img {
 		max-height: 225px;
 		max-width: 300px;
+		margin: 1.5em;
 	}
 
 	.sponsor-logos .gold a img {
 		max-height: 131px;
 		max-width: 175px;
+		margin: 1.5em;
 	}
 	.sponsor-logos .silver a img {
 		max-height: 113px;
 		max-width: 150px;
+		margin: 1.5em;
 	}
 	.sponsor-logos .bronze a img {
 		max-height: 86px;
 		max-width: 115px;
+		margin: 1.5em;
 	}
 	.sponsor-logos .other a img {
 		max-height: 56px;
 		max-width: 75px;
+		margin: 1.5em;
 	}
 }
 
