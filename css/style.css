@@ -2636,6 +2636,7 @@ section{
 li{
   font-family: monteserrat-light;
   list-style: none;
+  line-height: 2em;
 }
 
 a{
