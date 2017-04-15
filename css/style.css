@@ -2254,10 +2254,10 @@ section{
 
 /* right half */
 .s-right{
-	padding-top:90px;
 	padding-left:35px;
 	border-left:2px solid #eee;
 }
+
 .s-right .search input{
 	width:80%;
 	padding:10px 15px;
@@ -2650,4 +2650,49 @@ a:hover{
   -o-transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out;
   color: #0065A4;
+}
+
+.liround h4{
+	margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.liround li {
+    margin-bottom: 25px;
+		padding-bottom: 10px;
+}
+.liround li:last-child{
+    margin-bottom: 0px;
+}
+.liround li i {
+  border: 1px solid #a8a8a8;
+  border-radius: 50%;
+  float: left;
+  font-size: 24px;
+  height: 47px;
+  line-height: 47px;
+  margin-right: 12px;
+  text-align: center;
+  width: 47px;
+	color: #919191;
+}
+.liround li h4,
+.liround li span {
+	top: 5px;
+  position: relative;
+ 	text-transform: none;
+}
+.liround li h4 {
+    color: #7b7b7b;
+}
+.liround li span,
+.liround li h4 {
+    overflow: hidden;
+}
+.liround li span a,
+.liround li span {
+    color: #979797;
+}
+.liround li span a:hover {
+    color: #7b7b7b;
 }
