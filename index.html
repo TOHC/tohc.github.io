@@ -1,317 +1,611 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 	<head>
+		<!-- meta tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Toronto Hacker Club</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/font-awesome.min.css">
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<meta name="description" content="The Toronto Hacker Club is a student-run organization that aims to promote technology education throughout the Greater Toronto Area.">
+		<meta name="keywords" content="TOHC, Toronto Hacker Club, Hacker, Hackathon, Computer Science, Innovation, Entrepreneurship, Education">
+		<meta property="og:image" content="http://torontohacker.club/images/event-holder.png">
+		<meta property="og:description" content="The Toronto Hacker Club is a student-run organization that aims to promote technology education throughout the Greater Toronto Area.">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<!-- css files -->
+		<!-- fav icon -->
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+		<!-- bootstrap css file -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- fontawesome css file -->
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<!-- Magnific popup library -->
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<!-- owl carousel css files -->
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<!-- custom css file -->
+		<link rel="stylesheet" href="css/style.css">
 	</head>
+	<body>
 
-	<body class="landing">
-		<div id="page-wrapper">
-			<header id="header">
-				<h1 id="logo"><a href="/">Toronto Hacker Club</a></h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="#" class="scrolly">Home</a></li>
-						<li><a href="#about" class="scrolly">About</a></li>
-						<li><a href="#events" class="scrolly">Events</a></li>
-						<li><a href="#team" class="scrolly">Team</a></li>
-						<li><a href="#sponsors" class="scrolly">Sponsors</a></li>
-						<li><a href="#contact" class="scrolly">Contact</a></li>
-					</ul>
-				</nav>
-			</header>
 
-			<section id="banner">
-				<div class="content">
-					<header>
-						<h2>Toronto Hacker Club</h2>
-					</header>
+
+		<!-- main nav bar -->
+		<nav id="main-nav">
+			<div class="container">
+				<a href=""><img id="nav-logo" src="images/logo-ac.png" alt="logo"></a>
+				<i id="bars" class="fa fa-bars" aria-hidden="true"></i>
+				<ul>
+					<li class="active"><a>home</a></li>
+					<li><a>about</a></li>
+					<li><a>events</a></li>
+					<li><a>team</a></li>
+					<li><a>sponsors</a></li>
+					<li><a>contact</a></li>
+				</ul>
+
+			</div>
+		</nav>
+
+		<!-- header -->
+		<header id="home-header">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="http://torontohacker.club/images/bg1.jpg"></div>
+			<div class="container">
+				<h1><span id="name">&nbsp;</span></h1>
+				<div class="social-media">
+					<a href="https://www.facebook.com/torontohackerclub/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="https://www.facebook.com/groups/torontohackerclub/" target="_blank"><i class="fa fa-group" aria-hidden="true"></i></a>
+					<a href="https://twitter.com/TOhackerclub" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="https://www.instagram.com/torontohackerclub/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 				</div>
-				<a href="#about" class="goto-next scrolly">Next</a>
-			</section>
+				<div class="down">
+					<i id="down-icon" class="fa fa-angle-double-down" aria-hidden="true"></i>
+				</div>
+			</div>
+		</header>
 
-			<section id="about" class="spotlight style1 bottom">
-				<span class="image fit main"><img src="images/bg1.jpg" alt="" /></span>
-				<div class="content">
-					<div class="container">
+		<!-- about section -->
+		<section id="about">
+			<div class="container">
+				<h2 class="section-header">about us</h2>
+				<div class="col-md-10 col-md-offset-1 about-right">
+					<p>The Toronto Hacker Club is a student-run organization that aims to promote technology education throughout the Greater Toronto Area. To date, we have hosted three hackathons and three workshops in partnership with a variety of influential companies, such as Google, Mozilla, and RBC. <br />The Toronto Hacker Club has also been awarded the "Building Community through Sciences and Technology Award" by the Toronto Youth Cabinet.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- statistics section -->
+		<section id="statistics">
+			<div class="container">
+				<div class="col-md-3 part">
+					<i class="fa fa-male" aria-hidden="true"></i>
+					<p class="num" id="num-of-members">500</p>
+					<p class="title">Community Members</p>
+				</div>
+
+				<div class="col-md-3 part">
+					<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+					<p class="num" id="num-of-schools">30</p>
+					<p class="title">Schools</p>
+				</div>
+
+				<div class="col-md-3 part">
+					<i class="fa fa-code" aria-hidden="true"></i>
+					<p class="num" id="num-of-hackathons">3</p>
+					<p class="title">Hackathons</p>
+				</div>
+
+				<div class="col-md-3 part">
+					<i class="fa fa-laptop" aria-hidden="true"></i>
+					<p class="num" id="num-of-workshops">3</p>
+					<p class="title">Workshops</p>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="events">
+			<div class="container">
+				<h2 class="section-header">Events</h2>
+				<div class="buttons" data-toggle="buttons">
+					<button class="active filter" data-filter="all">all</button>
+					<button class="filter" data-filter=".upcoming">upcoming</button>
+					<button class="filter" data-filter=".hackathons">hackathons</button>
+					<button class="filter" data-filter=".workshops">workshops</button>
+				</div>
+
+				<div id="items-container">
+					<!-- THacks 2 -->
+					<div class="item-o col-md-4 upcoming hackathons mix">
+						<div class="item upcoming hackathons">
+							<img src="images/event-holder.png" alt="">
+							<div class="over">
+								<h4>THacks 2</h4>
+								<p class="category">XX/10/2017</p>
+								<a href="#popup-thacks2" class="popup-link"><span class="open-icon"><i class="fa fa-search" aria-hidden="true"></i></span></a>
+							</div>
+						</div>
+					</div>
+					<div id="popup-thacks2" class="white-popup mfp-hide">
+						<h3>THacks 2</h3>
+						<h5>XX/10/2017</h5>
+						<img src="images/event-holder.png" alt="THacks 2">
+						<p class="desc">
+							A the Toronto Hacker Club’s seventh event, Ontario’s best and brightest students will be learning, building, and creating with the latest in cutting-edge technology. Over the course of 36 hours, participants will compete for a selection of prizes by developing and pitching a project to a panel of judges. During the event, students are invited to participate in optional workshops, each featuring various fields in programming, engineering, and technology. At the end of the event, projects with the greatest technical depth, best presentation, and finest aesthetic appeal will be rewarded.
+						</p>
+					</div>
+
+					<!-- JS Boost -->
+					<div class="item-o col-md-4 workshops mix">
+						<div class="item workshops">
+							<img src="images/events/jsboost.jpg" alt="JS Boost">
+							<div class="over">
+								<h4>JS Boost</h4>
+								<p class="category">02/02/2017</p>
+								<a href="#popup-jsboost" class="popup-link"><span class="open-icon"><i class="fa fa-search" aria-hidden="true"></i></span></a>
+							</div>
+						</div>
+					</div>
+					<div id="popup-jsboost" class="white-popup mfp-hide">
+						<h3>JS Boost</h3>
+						<h5>02/02/2017</h5>
+						<img src="images/events/jsboost.jpg" alt="p1">
+						<p class="desc">
+							JS Boost at Mozilla is a three hour workshop for high school and university students aiming to enrich their understanding of key web development concepts.
+							Attendants will learn to use frameworks such as MeteorJS and ChartsJS for full-stack development. Throughout the event, speakers will guide the participants through creating a practical web application.
+							JS Boost will be the perfect environment for you to build, learn, and network.
+						</p>
+					</div>
+
+					<!-- Intro to Cybersecurity -->
+					<div class="item-o col-md-4 workshops mix">
+						<div class="item workshops">
+							<img src="images/events/intro-to-cybersecurity.jpg" alt="">
+							<div class="over">
+								<h4>Intro to Cybersecurity</h4>
+								<p class="category">09/12/2016</p>
+								<a href="#popup-cybersecurity" class="popup-link"><span class="open-icon"><i class="fa fa-search" aria-hidden="true"></i></span></a>
+							</div>
+						</div>
+					</div>
+					<div id="popup-cybersecurity" class="white-popup mfp-hide">
+						<h3>Intro to Cybersecurity</h3>
+						<h5>09/12/2016</h5>
+						<img src="images/events/intro-to-cybersecurity.jpg" alt="">
+						<p class="desc">
+							The Toronto Hacker Club's Introduction to Cybersecurity is a great opportunity for students to come out and learn from professionals in the field. The event will feature a workshop run by Google engineers and an opportunity to network with likeminded individuals.
+						</p>
+					</div>
+
+					<!-- THacks -->
+					<div class="item-o col-md-4 hackathons mix">
+						<div class="item hackathons">
+							<img src="images/events/thacks2016.jpg" alt="">
+							<div class="over">
+								<h4>THacks</h4>
+								<p class="category">22/10/2016</p>
+								<a href="#popup-thacks" class="popup-link"><span class="open-icon"><i class="fa fa-search" aria-hidden="true"></i></span></a>
+							</div>
+						</div>
+					</div>
+					<div id="popup-thacks" class="white-popup mfp-hide">
+						<h3>THacks</h3>
+						<h5>22/10/2016</h5>
+						<img src="images/events/thacks2016.jpg" alt="p1">
+						<p class="desc">
+							THacks is a free 12 hour hackathon for students of all ages, proficiencies, and interests. The event offers an opportunity to tailor your own personalized hackathon experience, with access to a variety of workshops and networking opportunities. Meals will be provided for all participants, as well as swag and prizes from leading companies in the industry.
+						</p>
+					</div>
+
+					<!-- Intro to Web Design -->
+					<div class="item-o col-md-4 workshops mix">
+						<div class="item workshops">
+							<img src="images/events/intro-to-web-design.jpg" alt="">
+							<div class="over">
+								<h4>Intro to Web Design</h4>
+								<p class="category">29/04/2016</p>
+								<a href="#popup-webdesign" class="popup-link"><span class="open-icon"><i class="fa fa-search" aria-hidden="true"></i></span></a>
+							</div>
+						</div>
+					</div>
+					<div id="popup-webdesign" class="white-popup mfp-hide">
+						<h3>Intro to Web Design</h3>
+						<h5>29/04/2016</h5>
+						<img src="images/events/intro-to-web-design.jpg" alt="p1">
+						<p class="desc">
+							Intro to Web Design is an event for aspiring designers or anyone who wants a chance to be exposed to the skills and tools of the web design industry. Participants will engage in a series of hands-on workshops at Mozilla's headquarters in downtown Toronto. The evening will also provide a networking opportunity with industry professionals and web specialists.
+						</p>
+					</div>
+
+					<!-- DataHacks -->
+					<div class="item-o col-md-4 hackathons mix">
+						<div class="item hackathons">
+							<img src="images/events/datahacks2.jpg" alt="">
+							<div class="over">
+								<h4>DataHacks</h4>
+								<p class="category">31/01/2016</p>
+								<a href="#popup-datahacks" class="popup-link"><span class="open-icon"><i class="fa fa-search" aria-hidden="true"></i></span></a>
+							</div>
+						</div>
+					</div>
+					<div id="popup-datahacks" class="white-popup mfp-hide">
+						<h3>DataHacks</h3>
+						<h5>31/01/2016</h5>
+						<img src="images/events/datahacks2.jpg" alt="p1">
+						<p class="desc">
+							DataHacks is an event devoted to the wonders of data science and artificial intelligence. High school students will get the opportunity to learn advanced concepts in the fields of data mining and machine learning all for free! The event will consist of snacks, numerous hands-on workshops, and a team competition.
+						</p>
+					</div>
+
+					<!-- Local Hack Day -->
+					<div class="item-o col-md-4 hackathons mix">
+						<div class="item hackathons">
+							<img src="images/events/local-hack-day.jpg" alt="">
+							<div class="over">
+								<h4>Local Hack Day</h4>
+								<p class="category">10/10/2015</p>
+								<a href="#popup-localhackday" class="popup-link"><span class="open-icon"><i class="fa fa-search" aria-hidden="true"></i></span></a>
+							</div>
+						</div>
+					</div>
+					<div id="popup-localhackday" class="white-popup mfp-hide">
+						<h3>Local Hack Day</h3>
+						<h5>10/10/2015</h5>
+						<img src="images/events/local-hack-day.jpg" alt="p1">
+						<p class="desc">
+							Local Hack Day is a 12 hour mini-hackathon on your School's campus that brings together the local hacker community to celebrate building awesome technology. Simultaneously other students around the world will be hosting their own Local Hack Days, resulting in the largest single day of student hacking ever. Throughout the day there will be awesome livestreams, chatrooms, and fun activities that you can use to meet students in your local community and across the globe. Whether you're a seasoned hackathon veteran or have never been to a hackathon before, Local Hack Day is the best way to kick off the Fall 2015 MLH Hackathon Season.
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- subscribe -->
+		<section id="subscribe">
+			<div class="container">
+				<h2 class="section-header">stay in touch</h2>
+				<form action="https://club.us11.list-manage.com/subscribe/post?u=f3b5cad98f50966fbf4d279aa&amp;id=495cb90d95" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<div id="sub">
+						<input type="email" name="EMAIL" placeholder="Email">
+						<input type="submit" name="subscribe" value="subscribe">
+					</div>
+					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f3b5cad98f50966fbf4d279aa_495cb90d95" tabindex="-1" value=""></div>
+				</form>
+			</div>
+		</section>
+
+		<!-- team -->
+		<section id="team">
+			<div class="container">
+				<h2 class="section-header">the team</h2>
+				<div class="owl-carousel owl-theme" id="team-slider">
+					<!-- Peter Stakoun -->
+					<div class="member-o">
+						<div class="member">
+							<img src="images/team/peterstakoun.jpg">
+							<div class="info">
+								<p class="name">peter stakoun</p>
+								<p class="job">president</p>
+								<div class="social-media">
+									<a href="mailto:peter@torontohacker.club"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Adam Fahs -->
+					<div class="member-o">
+						<div class="member">
+							<img src="images/team/adamfahs.jpg">
+							<div class="info">
+								<p class="name">adam fahs</p>
+								<p class="job">vice president</p>
+								<div class="social-media">
+									<a href="mailto:adam@torontohacker.club"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Julia Petolescu -->
+					<div class="member-o">
+						<div class="member">
+							<img src="images/team/juliapetolescu.jpg" alt="">
+							<div class="info">
+								<p class="name">julia petolescu</p>
+								<p class="job">logistics director</p>
+								<div class="social-media">
+									<a href="mailto:julia@torontohacker.club"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Benjamin Ma -->
+					<div class="member-o">
+						<div class="member">
+							<img src="images/team/benjaminma.jpg" alt="">
+							<div class="info">
+								<p class="name">benjamin ma</p>
+								<p class="job">marketing director</p>
+								<div class="social-media">
+									<a href="mailto:benjamin@torontohacker.club"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Curtis Chong -->
+					<div class="member-o">
+						<div class="member">
+							<img src="images/team/curtischong.jpg" alt="">
+							<div class="info">
+								<p class="name">curtis chong</p>
+								<p class="job">corporate relations director</p>
+								<div class="social-media">
+									<a href="mailto:curtis@torontohacker.club"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Carol Chen -->
+					<div class="member-o">
+						<div class="member">
+							<img src="images/team/carolchen.jpg" alt="">
+							<div class="info">
+								<p class="name">carol chen</p>
+								<p class="job">event coordinator</p>
+								<div class="social-media">
+									<a href="mailto:carol@torontohacker.club"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Simon Zirui Guo -->
+					<div class="member-o">
+						<div class="member">
+							<img src="images/team/simonguo.jpg" alt="">
+							<div class="info">
+								<p class="name">simon zirui guo</p>
+								<p class="job">event coordinator</p>
+								<div class="social-media">
+									<a href="mailto:simon@torontohacker.club"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Eric Li -->
+					<div class="member-o">
+						<div class="member">
+							<img src="images/team/ericli.jpg" alt="">
+							<div class="info">
+								<p class="name">eric li</p>
+								<p class="job">event coordinator</p>
+								<div class="social-media">
+									<a href="mailto:eric@torontohacker.club"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Lavanya Sinha -->
+					<div class="member-o">
+						<div class="member">
+							<img src="images/team/lavanyasinha.jpg" alt="">
+							<div class="info">
+								<p class="name">lavanya sinha</p>
+								<p class="job">advertising specialist</p>
+								<div class="social-media">
+									<a href="mailto:lavanya@torontohacker.club"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Jasmine Chung -->
+					<div class="member-o">
+						<div class="member">
+							<img src="images/team/jasminechung.jpg" alt="">
+							<div class="info">
+								<p class="name">jasmine chung</p>
+								<p class="job">social media specialist</p>
+								<div class="social-media">
+									<a href="mailto:jasmine@torontohacker.club"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Marcel O'Neil -->
+					<div class="member-o">
+						<div class="member">
+							<img src="images/team/marceloneil.jpg" alt="">
+							<div class="info">
+								<p class="name">marcel o'Neil</p>
+								<p class="job">corporate relations specialist</p>
+								<div class="social-media">
+									<a href="mailto:marcel@torontohacker.club"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Kevin Shen -->
+					<div class="member-o">
+						<div class="member">
+							<img src="images/team/kevinshen.jpg" alt="">
+							<div class="info">
+								<p class="name">kevin shen</p>
+								<p class="job">corporate relations specialist</p>
+								<div class="social-media">
+									<a href="mailto:kevin@torontohacker.club"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Sunrose Billing -->
+					<div class="member-o">
+						<div class="member">
+							<img src="images/team/sunrosebilling.jpg" alt="">
+							<div class="info">
+								<p class="name">sunrose billing</p>
+								<p class="job">corporate relations specialist</p>
+								<div class="social-media">
+									<a href="mailto:sunrose@torontohacker.club"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- work with me -->
+		<section id="work-w-us">
+			<div class="container">
+				<h2 class="section-header">Interested in working with us?</h2>
+				<a href="apply" target="_blank"><button>APPLY NOW</button></a>
+			</div>
+		</section>
+
+		<!-- team section -->
+		<section id="sponsors">
+			<div class="container-fluid">
+				<h2 class="section-header">Sponsors</h2>
+				<div class="sponsor-logos">
 						<div class="row">
-							<div class="4u 12u$(medium)">
-								<header>
-									<h2>About Us</h2>
-									<p>We work to empower our generation for a brighter future.</p>
-								</header>
+							<div class="col-xs-12 platinum">
+								<a href="http://ieee.toronto.edu/" target="_blank"><img class=""src="images/sponsors/ieee-uoft.png" /></a>
+								<a href="http://www.rbcroyalbank.com" target="_blank"><img class=""src="images/sponsors/rbc.png" /></a>
 							</div>
-							<div class="4u 12u$(medium)">
-								<p>The Toronto Hacker Club is a student-run organization aiming to promote computer science education in high schools throughout the Greater Toronto Area.</p>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 gold">
+								<a href="http://informatica.com" target="_blank"><img src="images/sponsors/informatica.png" /></a>
+								<a href="http://dotto-one.com" target="_blank"><img src="images/sponsors/dotto-one.png" /></a>
+								<a href="http://collyerbenson.com" target="_blank"><img src="images/sponsors/collyerbenson.png" /></a>
+								<a href="http://hover.com" target="_blank"><img src="images/sponsors/hover.png" /></a>
+								<a href="http://get.club" target="_blank"><img src="images/sponsors/club.png" /></a>
 							</div>
-							<div class="4u$ 12u$(medium)">
-								<p>We host hackathons and workshops for high school students and have been awarded the "Building Community through Sciences and Technology Award" by the Toronto Youth Cabinet.</p>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 silver">
+								<a href="http://www.phoenixsoftware.ca/" target="_blank"><img src="images/sponsors/phoenix.png" /></a>
+								<a href="http://google.com" target="_blank"><img src="images/sponsors/google.png" /></a>
+								<a href="http://mozilla.org" target="_blank"><img src="images/sponsors/mozilla.png" /></a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 bronze">
+								<a href="http://lighthouselabs.ca" target="_blank"><img src="images/sponsors/lighthouse.png" /></a>
+								<a href="http://amanah.com" target="_blank"><img src="images/sponsors/amanah.png" /></a>
+								<a href="http://northern-secondary.com" target="_blank"><img src="images/sponsors/northern.png" /></a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-2"></div>
+							<div class="col-sm-8 other">
+								<a href="http://github.com" target="_blank"><img src="images/sponsors/github.png" /></a>
+								<a href="http://get.tech" target="_blank"><img src="images/sponsors/tech.png" /></a>
+								<a href="http://clarifai.com" target="_blank"><img src="images/sponsors/clarifai.png" /></a>
+								<a href="http://indico.io" target="_blank"><img src="images/sponsors/indico.png" /></a>
+								<a href="http://choosemuse.com" target="_blank"><img src="images/sponsors/muse.png" /></a>
+								<a href="http://lanilabs.com" target="_blank"><img src="images/sponsors/lani.png" /></a>
+								<a href="http://plux.info" target="_blank"><img src="images/sponsors/plux.png" /></a>
+								<a href="http://bitalino.com" target="_blank"><img src="images/sponsors/bitalino.png" /></a>
+								<a href="http://pizzapizza.com" target="_blank"><img src="images/sponsors/pizzapizza.png" /></a>
+								<a href="http://www.sultanofsamosas.com" target="_blank"><img src="images/sponsors/samosas.png" /></a>
+							</div>
+							<div class="col-xs-2"></div>
+						</div>
+					</div>
+				<h2 class="section-header">Partners</h2>
+				<div class="sponsor-logos">
+					<div class="row">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-8 bronze">
+							<a href="http://rockstar-cafe.ca" target="_blank"><img src="images/sponsors/rockstarcafe.png" /></a>
+							<a href="https://www.techtoronto.org/" target="_blank"><img src="images/sponsors/techto.png" /></a>
+							<a href="http://hackernest.com" target="_blank"><img src="images/sponsors/hackernest.png" /></a>
+						</div>
+						<div class="col-xs-2"></div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- contact section -->
+		<section id="contact">
+			<div class="container">
+				<h2 class="section-header">contact us</h2>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8 left">
+						<form method="POST" action="http://formspree.io/contact@torontohacker.club">
+						  <input type="name" name="name" placeholder="Your name" required>
+						  <input type="email" name="email" placeholder="Your email" required>
+						  <textarea name="message" placeholder="Your message" required></textarea>
+							<br>
+							<br>
+						  <center><button class="formbutton" type="submit">Submit</button></center>
+						</form>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+
+				<div id="info" class="col-md-12">
+					<div class="part-o col-md-3 col-md-offset-3">
+						<div class="part">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<br>
+							<a class="social-media" href="mailto:contact@torontohacker.club">contact@torontohacker.club</a>
+						</div>
+					</div>
+					<div class="part-o col-md-3">
+						<div class="part">
+							<h4>follow us</h4>
+							<div class="social-media">
+								<a href="https://www.facebook.com/torontohackerclub/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="https://www.facebook.com/groups/torontohackerclub/" target="_blank"><i class="fa fa-group" aria-hidden="true"></i></a>
+								<a href="https://twitter.com/TOhackerclub" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="https://www.instagram.com/torontohackerclub/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<a href="#events" class="goto-next scrolly">Next</a>
-			</section>
+			</div>
+		</section>
 
-			<section id="events" class="spotlight style2 left">
-				<span class="image fit main bottom"><img src="images/bg2.jpg" alt="" /></span>
-				<div class="content">
-					<header>
-						<h2>Upcoming Events</h2>
-					</header>
-					<div class="row uniform">
-						<section class="12u">
-							<div class="event upcoming">
-								<h3 class="title">Coming Soon</h3>
-								<h4 class="date"></h4>
-							</div>
-						</section>
-					</div>
-					<br>
-					<header>
-						<h3>Past Events</h3>
-					</header>
-					<div class="row uniform">
-						<section class="6u">
-							<div class="event past">
-								<h4 class="title">JS Boost</h4>
-							</div>
-						</section>
-						<section class="6u">
-							<div class="event past">
-								<h4 class="title">Intro to Cybersecurity</h4>
-							</div>
-						</section>
-						<section class="6u">
-							<div class="event past">
-								<h4 class="title">T.Hacks</h4>
-							</div>
-						</section>
-						<section class="6u">
-							<div class="event past">
-								<h4 class="title">Intro to Web Design</h4>
-							</div>
-						</section>
-						<section class="6u">
-							<div class="event past">
-								<h4 class="title">DataHacks</h4>
-							</div>
-						</section>
-						<section class="6u">
-							<div class="event past">
-								<h4 class="title">Local Hack Day</h4>
-							</div>
-						</section>
-					</div>
-				</div>
-				<a href="#team" class="goto-next scrolly">Next</a>
-			</section>
+		<!-- go to top button -->
+		<i class="fa fa-arrow-up" aria-hidden="true" id="to-top"></i>
 
-			<section id="team" class="wrapper style1 special fade-up">
-				<div class="container">
-					<header>
-						<h2>Our Team</h2>
-					</header>
-					<div class="box alt">
-						<div class="row uniform">
-							<section class="3u 4u(medium) 6u(xsmall)">
-								<span class="image fit"><img src="images/peterstakoun.jpg" /></span>
-								<h3>Peter Stakoun</h3>
-								<h4>President</h4>
-							</section>
-							<section class="3u 4u(medium) 6u(xsmall)">
-								<span class="image fit"><img src="images/adamfahs.jpg" /></span>
-								<h3>Adam Fahs</h3>
-								<h4>Vice President</h4>
-							</section>
-							<section class="3u 4u(medium) 6u(xsmall)">
-								<span class="image fit"><img src="images/juliapetolescu.jpg" /></span>
-								<h3>Julia Petolescu</h3>
-								<h4>Logistics Director</h4>
-							</section>
-							<section class="3u 4u(medium) 6u(xsmall)">
-								<span class="image fit"><img src="images/benjaminma.jpg" /></span>
-								<h3>Benjamin Ma</h3>
-								<h4>Marketing Director</h4>
-							</section>
-							<section class="3u 4u(medium) 6u(xsmall)">
-								<span class="image fit"><img src="images/curtischong.jpg" /></span>
-								<h3>Curtis Chong</h3>
-								<h4>Corporate Director</h4>
-							</section>
-							<section class="3u 4u(medium) 6u(xsmall)">
-								<span class="image fit"><img src="images/ericli.jpg" /></span>
-								<h3>Eric Li</h3>
-								<h4>Event Coordinator</h4>
-							</section>
-							<section class="3u 4u(medium) 6u(xsmall)">
-								<span class="image fit"><img src="images/carolchen.jpg" /></span>
-								<h3>Carol Chen</h3>
-								<h4>Event Coordinator</h4>
-							</section>
-							<section class="3u 4u(medium) 6u(xsmall)">
-								<span class="image fit"><img src="images/simonguo.jpg" /></span>
-								<h3>Simon Zirui Guo</h3>
-								<h4>Event Coordinator</h4>
-							</section>
-							<section class="3u 4u(medium) 6u(xsmall)">
-								<span class="image fit"><img src="images/jasminechung.jpg" /></span>
-								<h3>Jasmine Chung</h3>
-								<h4>Social Media</h4>
-							</section>
-							<section class="3u 4u(medium) 6u(xsmall)">
-								<span class="image fit"><img src="images/lavanyasinha.jpg" /></span>
-								<h3>Lavanya Sinha</h3>
-								<h4>Advertising</h4>
-							</section>
-							<section class="3u 4u(medium) 6u(xsmall)">
-								<span class="image fit"><img src="images/marceloneil.jpg" /></span>
-								<h3>Marcel O'Neil</h3>
-								<h4>Corporate Relations</h4>
-							</section>
-							<section class="3u 4u(medium) 6u(xsmall)">
-								<span class="image fit"><img src="images/kevinshen.jpg" /></span>
-								<h3>Kevin Shen</h3>
-								<h4>Corporate Relations</h4>
-							</section>
-							<section class="3u 4u(medium) 6u(xsmall)">
-								<span class="image fit"><img src="images/sunrosebilling.jpg" /></span>
-								<h3>Sunrose Billing</h3>
-								<h4>Corporate Relations</h4>
-							</section>
-							<!--<section class="3u 4u(medium) 6u(xsmall)">
-								<span class="image fit"><img src="images/jacobfreeman.jpg" /></span>
-								<h3>Jacob Freeman</h3>
-								<h4>Corporate Relations</h4>
-							</section>-->
-							<section class="3u 4u(medium) 6u(xsmall)">
-								<span class="image fit"><img src="images/shehryarassad.jpg" /></span>
-								<h3>Shehryar Assad</h3>
-								<h4>Graphic Designer</h4>
-							</section>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="sponsors" class="wrapper style1 special fade-up">
-				<div class="container">
-					<header>
-						<h2>Our Sponsors</h2>
-					</header>
-					<div class="box alt">
-						<div class="row uniform">
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://www.rbcroyalbank.com" target="_blank"><span class="image fit"><img src="images/rbc.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://mozilla.org" target="_blank"><span class="image fit"><img src="images/mozilla.svg" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://informatica.com" target="_blank"><span class="image fit"><img src="images/informatica.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://dotto-one.com" target="_blank"><span class="image fit"><img src="images/dotto-one.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://collyerbenson.com" target="_blank"><span class="image fit"><img src="images/collyerbenson.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://hover.com" target="_blank"><span class="image fit"><img src="images/hover.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://get.club" target="_blank"><span class="image fit"><img src="images/club.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://google.com" target="_blank"><span class="image fit"><img src="images/google.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://www.phoenixsoftware.ca/" target="_blank"><span class="image fit"><img src="images/phoenix.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="https://www.amanah.com/" target="_blank"><span class="image fit"><img src="images/amanah.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://northern-secondary.com" target="_blank"><span class="image fit"><img src="images/northern.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://lighthouselabs.ca" target="_blank"><span class="image fit"><img src="images/lighthouse.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://github.com" target="_blank"><span class="image fit"><img src="images/github.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://indico.io" target="_blank"><span class="image fit"><img src="images/indico.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://choosemuse.com" target="_blank"><span class="image fit"><img src="images/muse.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://get.tech" target="_blank"><span class="image fit"><img src="images/tech.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://bitalino.com" target="_blank"><span class="image fit"><img src="images/bitalino.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://plux.info" target="_blank"><span class="image fit"><img src="images/plux.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://lanilabs.com" target="_blank"><span class="image fit"><img src="images/lani.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://clarifai.com" target="_blank"><span class="image fit"><img src="images/clarifai.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://hackernest.com" target="_blank"><span class="image fit"><img src="images/hackernest.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://www.sultanofsamosas.com" target="_blank"><span class="image fit"><img src="images/samosas.png" /></span></a>
-							</section>
-							<section class="2u 3u(medium) 4u(xsmall)">
-								<a href="http://pizzapizza.com" target="_blank"><span class="image fit"><img src="images/pizzapizza.png" /></span></a>
-							</section>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="contact" class="wrapper style1 special">
-				<div class="container">
-					<header>
-						<h3 style="padding-bottom:20px">If you have any questions or concerns, shoot us an email at <a href="mailto:contact@torontohacker.club">contact@torontohacker.club</a>.</h3>
-						<a style="padding-right:20px" href="https://www.facebook.com/torontohackerclub/" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
-						<a style="padding-right:20px" href="https://www.facebook.com/groups/torontohackerclub/" target="_blank"><i class="fa fa-users fa-2x" aria-hidden="true"></i></a>
-						<a style="padding-right:20px" href="https://twitter.com/TOhackerclub" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
-						<a style="padding-right:20px" href="https://www.instagram.com/torontohackerclub/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-						<a href="mailto:contact@torontohacker.club"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
-					</header>
-				</div>
-			</section>
+		<!-- footer -->
+		<div id="footer">
+			<div class="container">
+				<p>Copyright &copy; 2017 Toronto Hacker Club</p>
+			</div>
 		</div>
-
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/jquery.dropotron.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/skel.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<script src="assets/js/main.js"></script>
+		<!-- scripts -->
+		<!-- google map scripts -->
+		<!-- jquery -->
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<!-- bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- MixItUp library script -->
+		<script src="js/jquery.mixitup.js"></script>
+		<!-- Magnific Popup library Script -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- owl carousel script -->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- count to plugin -->
+		<script src="js/jquery.countTo.js"></script>
+		<!-- typed.js plugin -->
+		<script src="js/typed.min.js"></script>
+		<!-- parallax script file -->
+		<script src="js/parallax.min.js"></script>
+		<!-- custom script file -->
+		<script src="js/custom.js"></script>
 		<script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-            ga('create', 'UA-78821319-1', 'auto');
-            ga('send', 'pageview');
-        </script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-78821319-1', 'auto');
+      ga('send', 'pageview');
+  	</script>
 	</body>
-
 </html>
