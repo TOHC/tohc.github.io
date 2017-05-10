@@ -2319,6 +2319,9 @@ section{
 .s-right .keyword ul li a{
 	color:#fff;
 }
+.s-right .keyword ul:hover li:hover a:hover{
+	color:black;
+}
 .s-right .cat-list ul li:hover a,.s-right .recent-posts ul li:hover a{
 	color:#313131;
 }
@@ -2601,7 +2604,6 @@ section{
 	color:black;
 }
 
-/* header */
 .teamapp-header{
 	height:400px;
 	background-image:url("../images/hd1.jpg");
