@@ -2604,6 +2604,9 @@ section{
 	color:black;
 }
 
+.button-lg{
+	width: auto;
+}
 .teamapp-header{
 	height:400px;
 	background-image:url("../images/hd1.jpg");
