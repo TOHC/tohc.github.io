@@ -2190,7 +2190,7 @@ section{
 	padding-right:5px;
 }
 .content .main-blog .img-con{
-	max-height:400px;
+	max-height:600px;
 	overflow: hidden;
 }
 .content .main-blog .img-con img{
@@ -2700,4 +2700,36 @@ a:hover{
 }
 .liround li span a:hover {
     color: #7b7b7b;
+}
+
+
+.brainbrowse-header{
+	height:300px;
+	/*background-image:url("../images/events/brainbrowse-c.png");*/
+	background-color: #7AD5F9;
+	background-size:cover;
+	position: relative;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+}
+.brainbrowse-header h1{
+	margin-top:50px;
+}
+.brainbrowse-header h1{
+	color:#fff;
+	text-align: center;
+	text-transform: uppercase;
+	word-spacing: 6px;
+}
+.brainbrowse-header h4{
+	color:#fff;
+	text-align: center;
+	text-transform: uppercase;
+	word-spacing: 6px;
+	font-family: monteserrat-light;
 }
