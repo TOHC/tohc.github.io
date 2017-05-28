@@ -2435,6 +2435,11 @@ section{
 	}
 }
 
+@media(max-width:475px){
+	.main-blog .sponsor-logos{
+		padding-bottom: 0;
+	}
+}
 
 .sponsor-logos{
   padding-bottom: 75px;
