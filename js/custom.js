@@ -30,7 +30,7 @@ doc.ready(function () {
 		htmlBody = $("html, body"),
 		about = $("#about"),
 		events = $("#events"),
-		team = $("#team"),
+		//team = $("#team"),
 		sponsors = $("#sponsors"),
 		contact = $("#contact"),
 		mainNav = $("#main-nav"),
@@ -70,11 +70,11 @@ doc.ready(function () {
 		}, 600);
 	});
 
-	navLink4.on("click", function () {
+	/*navLink4.on("click", function () {
 		htmlBody.animate({
 			scrollTop: team.offset().top - 65
 		}, 600);
-	});
+	});*/
 
 	navLink5.on("click", function () {
 		htmlBody.animate({
@@ -177,9 +177,9 @@ doc.ready(function () {
 			navLink3.addClass("active").siblings().removeClass("active");
 		}
 
-		if (win.scrollTop() >= team.offset().top - 66) {
+		/*if (win.scrollTop() >= team.offset().top - 66) {
 			navLink4.addClass("active").siblings().removeClass("active");
-		}
+		}*/
 
 		if (win.scrollTop() >= sponsors.offset().top - 66) {
 			navLink5.addClass("active").siblings().removeClass("active");
@@ -292,7 +292,7 @@ doc.ready(function () {
 	});
 
 	// trigger owl coursel slider for team section
-	$("#team-slider").owlCarousel({
+	/*$("#team-slider").owlCarousel({
 		slideSpeed : 300,
 		paginationSpeed : 400,
 		items: 3,
@@ -311,7 +311,7 @@ doc.ready(function () {
 				items: 3
 			}
 		}
-	});
+	});*/
 
 	// trigger owl coursel slider for partners
 	$("#partners-slider").owlCarousel({
