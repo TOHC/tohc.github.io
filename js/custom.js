@@ -76,13 +76,13 @@ doc.ready(function () {
 		}, 600);
 	});*/
 
-	navLink5.on("click", function () {
+	navLink4.on("click", function () {
 		htmlBody.animate({
 			scrollTop: sponsors.offset().top - 65
 		}, 600);
 	});
 
-	navLink6.on("click", function () {
+	navLink5.on("click", function () {
 		htmlBody.animate({
 			scrollTop: contact.offset().top - 65
 		}, 600);
