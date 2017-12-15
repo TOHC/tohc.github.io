@@ -182,11 +182,11 @@ doc.ready(function () {
 		}*/
 
 		if (win.scrollTop() >= sponsors.offset().top - 66) {
-			navLink5.addClass("active").siblings().removeClass("active");
+			navLink4.addClass("active").siblings().removeClass("active");
 		}
 
 		if (win.scrollTop() >= $("#contact").offset().top - 66) {
-			navLink6.addClass("active").siblings().removeClass("active");
+			navLink5.addClass("active").siblings().removeClass("active");
 		}
 
 		// statistics section counting
